@@ -1,0 +1,2215 @@
+Database schema summary (compact). Use exact table and column names shown.
+Do NOT invent columns. Only use these tables and columns.
+----
+Table: AdminUsers_M
+  - UserID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Name (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Role (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - EmailID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Status (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - CreatedDate (DATETIME, nullable=True)
+  - Datem (DATETIME, nullable=True)
+  - ID (INTEGER, nullable=False)
+  - ... (+2 more columns)
+
+Table: aplrollnoupdatetracker
+  - ID (INTEGER, nullable=False)
+  - HMSOldRollno (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - HFASOldrollno (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - newrollno (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - remarks (VARCHAR(500) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - userid (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - datem (DATETIME, nullable=True)
+
+Table: App_Process_Control
+  - ID (INTEGER, nullable=False)
+  - AcademicYear (INTEGER, nullable=False)
+  - InstID (VARCHAR(5) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - CourseType (VARCHAR(6) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RankFrom (INTEGER, nullable=True)
+  - RankTo (INTEGER, nullable=True)
+  - CreatedDate (DATETIME, nullable=True)
+  - CreatedBy (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+
+Table: App_Process_Control_Tracker
+  - ID (INTEGER, nullable=False)
+  - AcademicYear (INTEGER, nullable=False)
+  - InstID (VARCHAR(5) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - CourseType (VARCHAR(5) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RankFrom (INTEGER, nullable=True)
+  - RankTo (INTEGER, nullable=True)
+  - CreatedDate (DATETIME, nullable=True)
+  - CreatedBy (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+1 more columns)
+
+Table: Appliance_M
+  - ID (INTEGER, nullable=False)
+  - Name (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+
+Table: appliance_MAHE
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Applicance_Code (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - FromDate (DATETIME, nullable=True)
+  - ToDate (DATETIME, nullable=True)
+  - Status (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - UserID (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Datem (DATETIME, nullable=False)
+  - AcdemicYear (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - ... (+8 more columns)
+
+Table: Appliance_Student_Details
+  - ID (INTEGER, nullable=False)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Applicance_Code (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - FromDate (DATETIME, nullable=True)
+  - ToDate (DATETIME, nullable=True)
+  - Status (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - UserID (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Datem (DATETIME, nullable=False)
+  - ... (+12 more columns)
+
+Table: Appliance_Student_Details_125134086
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Applicance_Code (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - FromDate (DATETIME, nullable=True)
+  - ToDate (DATETIME, nullable=True)
+  - Status (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - UserID (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Datem (DATETIME, nullable=False)
+  - AcdemicYear (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - ... (+8 more columns)
+
+Table: Appliance_Student_Details_Tracker
+  - ID (INTEGER, nullable=False)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Applicance_Code (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - seatID (VARCHAR(9) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - roomid (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - UserID (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Datem (DATETIME, nullable=False)
+  - AcdemicYear (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - ... (+5 more columns)
+
+Table: appliancerequestold_23_07_2025
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Applicance_Code (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - FromDate (DATETIME, nullable=True)
+  - ToDate (DATETIME, nullable=True)
+  - Status (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - UserID (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Datem (DATETIME, nullable=False)
+  - AcdemicYear (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - ... (+8 more columns)
+
+Table: Applicance_Loc_Map
+  - ApplicanceCode (INTEGER, nullable=False)
+  - LocationID (INTEGER, nullable=False)
+  - Amount (MONEY, nullable=True)
+  - AmountD (MONEY, nullable=True)
+  - AY (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - MaxVoltage (DECIMAL(10, 2), nullable=True)
+  - websitelink (VARCHAR COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+
+Table: Applicance_Loc_Map_Tracker
+  - ID (INTEGER, nullable=False)
+  - ApplicanceCode (INTEGER, nullable=False)
+  - LocationID (INTEGER, nullable=False)
+  - Amount (MONEY, nullable=True)
+  - AY (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - CreatedDate (DATETIME, nullable=True)
+  - CreatedBy (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+
+Table: ATOM_PaymentType_M
+  - ID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Description (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+
+Table: ATOM_ResponseStatus_M
+  - ID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Response_Msg (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Description (VARCHAR(200) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+
+Table: Block_Floor_Cat_Map
+  - BlockID (VARCHAR(3) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - FloorID (VARCHAR(2) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Category (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - IsLocked (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+
+Table: Block_Inst_Map
+  - BlockID (VARCHAR(3) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - InstID (VARCHAR(5) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - IsActive (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+
+Table: Block_M
+  - ID (VARCHAR(3) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Name (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Category (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - IsLocked (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - TariffFloorwise (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - AllocationType (VARCHAR(2) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - HasAppliance (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - BlockImagePath (VARCHAR COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+2 more columns)
+
+Table: block_M_bk
+  - ID (VARCHAR(3) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Name (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Category (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - IsLocked (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - TariffFloorwise (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - AllocationType (VARCHAR(2) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - HasAppliance (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - BlockImagePath (VARCHAR COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+1 more columns)
+
+Table: Block_Mess_Map
+  - BlockCode (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Mess_ID (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Mess_Userid (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+
+Table: Block1_M
+  - ID (VARCHAR(3) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Name (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Category (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - IsLocked (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - TariffFloorwise (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - AllocationType (VARCHAR(2) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - HasAppliance (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - BlockImagePath (VARCHAR COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+1 more columns)
+
+Table: BlrOccupancyDate
+  - BlockName (VARCHAR(500) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - RoomName (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - SeatName (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - AllocationType (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Rollno (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - AplNo (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - OccupancyDate (DATETIME, nullable=False)
+  - HMSBlock (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+2 more columns)
+
+Table: Course_M
+  - AY (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - CourseType (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Batch (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - CourseYear (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - StartDate (DATETIME, nullable=True)
+  - EndDate (DATETIME, nullable=True)
+  - Name (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - CourseID (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+
+Table: CourseType_M
+  - ID (VARCHAR(6) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Name (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - IsPG (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+
+Table: d1mhmast
+  - TypeInst (NVARCHAR(255) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RollNo (NVARCHAR(255) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Name (NVARCHAR(255) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - BlockCode (NVARCHAR(255) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RoomNumber (NVARCHAR(255) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - SeatID (NVARCHAR(255) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - DateOCC (NVARCHAR(255) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Flag (NVARCHAR(255) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+3 more columns)
+
+Table: d1NAvlKMCMH2Mast
+  - TypeInst (NVARCHAR(255) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RollNo (NVARCHAR(255) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Name (NVARCHAR(255) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - BlockCode (NVARCHAR(255) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RoomNumber (NVARCHAR(255) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - SeatID (NVARCHAR(255) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - DateOCC (NVARCHAR(255) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Flag (NVARCHAR(255) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+3 more columns)
+
+Table: d1occdate
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - ActionDate (DATETIME, nullable=False)
+  - Action (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Status (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Mactiondate (DATETIME, nullable=True)
+
+Table: d1paymentdtl
+  - OrderID (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RollNo (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - CurrencyType (VARCHAR(3) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - HostelAdvance (MONEY, nullable=True)
+  - UtilityAdvance (MONEY, nullable=True)
+  - HostelDeposit (MONEY, nullable=True)
+  - MessAdvance (MONEY, nullable=True)
+  - Laundary (MONEY, nullable=True)
+  - ... (+58 more columns)
+
+Table: d1Seat_Txn_sep03
+  - ID (INTEGER, nullable=False)
+  - SeatID (VARCHAR(9) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - BlockID (VARCHAR(3) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - RoomID (VARCHAR(7) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Action (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - ActionDate (DATETIME, nullable=False)
+  - Academicyear (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - ... (+5 more columns)
+
+Table: d1sedate
+  - RollNo (NVARCHAR(255) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Name (NVARCHAR(255) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - SDate (NVARCHAR(255) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - EDate (NVARCHAR(255) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+
+Table: d1Test
+  - RollNo (VARCHAR(15) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Name (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+
+Table: DebarredStud
+  - LocatnID (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - AY (INTEGER, nullable=True)
+
+Table: DemandDtls
+  - Locatn_id (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - BlockCode (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RoomNo (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RoomType (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - DateofOccupancy (DATE, nullable=True)
+  - HFFeeInRs (MONEY, nullable=True)
+  - HFFeeInDollar (MONEY, nullable=True)
+  - ... (+11 more columns)
+
+Table: DemandDtls_223
+  - Locatn_id (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - BlockCode (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RoomNo (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RoomType (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - DateofOccupancy (DATE, nullable=True)
+  - HFFeeInRs (MONEY, nullable=True)
+  - HFFeeInDollar (MONEY, nullable=True)
+  - ... (+9 more columns)
+
+Table: demanddtls_blr
+  - Locatn_id (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - BlockCode (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RoomNo (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RoomType (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - DateofOccupancy (DATE, nullable=True)
+  - HFFeeInRs (MONEY, nullable=True)
+  - HFFeeInDollar (MONEY, nullable=True)
+  - ... (+10 more columns)
+
+Table: demanddtlsbk0109
+  - Locatn_id (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - BlockCode (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RoomNo (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RoomType (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - DateofOccupancy (DATE, nullable=True)
+  - HFFeeInRs (MONEY, nullable=True)
+  - HFFeeInDollar (MONEY, nullable=True)
+  - ... (+10 more columns)
+
+Table: DemandDtlsbk201
+  - Locatn_id (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - BlockCode (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RoomNo (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RoomType (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - DateofOccupancy (DATE, nullable=True)
+  - HFFeeInRs (MONEY, nullable=True)
+  - HFFeeInDollar (MONEY, nullable=True)
+  - ... (+9 more columns)
+
+Table: DemandDtlsbk203
+  - Locatn_id (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - BlockCode (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RoomNo (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RoomType (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - DateofOccupancy (DATE, nullable=True)
+  - HFFeeInRs (MONEY, nullable=True)
+  - HFFeeInDollar (MONEY, nullable=True)
+  - ... (+9 more columns)
+
+Table: DemandDtlsbk205
+  - Locatn_id (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - BlockCode (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RoomNo (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RoomType (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - DateofOccupancy (DATE, nullable=True)
+  - HFFeeInRs (MONEY, nullable=True)
+  - HFFeeInDollar (MONEY, nullable=True)
+  - ... (+9 more columns)
+
+Table: DemandDtlsbk206
+  - Locatn_id (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - BlockCode (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RoomNo (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RoomType (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - DateofOccupancy (DATE, nullable=True)
+  - HFFeeInRs (MONEY, nullable=True)
+  - HFFeeInDollar (MONEY, nullable=True)
+  - ... (+9 more columns)
+
+Table: DemandDtlsbk214
+  - Locatn_id (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - BlockCode (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RoomNo (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RoomType (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - DateofOccupancy (DATE, nullable=True)
+  - HFFeeInRs (MONEY, nullable=True)
+  - HFFeeInDollar (MONEY, nullable=True)
+  - ... (+9 more columns)
+
+Table: DemandDtlsbk220
+  - Locatn_id (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - BlockCode (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RoomNo (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RoomType (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - DateofOccupancy (DATE, nullable=True)
+  - HFFeeInRs (MONEY, nullable=True)
+  - HFFeeInDollar (MONEY, nullable=True)
+  - ... (+9 more columns)
+
+Table: DemandDtlsbk222
+  - Locatn_id (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - BlockCode (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RoomNo (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RoomType (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - DateofOccupancy (DATE, nullable=True)
+  - HFFeeInRs (MONEY, nullable=True)
+  - HFFeeInDollar (MONEY, nullable=True)
+  - ... (+9 more columns)
+
+Table: DemandDtlsbk506
+  - Locatn_id (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - BlockCode (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RoomNo (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RoomType (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - DateofOccupancy (DATE, nullable=True)
+  - HFFeeInRs (MONEY, nullable=True)
+  - HFFeeInDollar (MONEY, nullable=True)
+  - ... (+9 more columns)
+
+Table: DemandDtlsbk513
+  - Locatn_id (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - BlockCode (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RoomNo (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RoomType (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - DateofOccupancy (DATE, nullable=True)
+  - HFFeeInRs (MONEY, nullable=True)
+  - HFFeeInDollar (MONEY, nullable=True)
+  - ... (+9 more columns)
+
+Table: DemandDtlsbk518
+  - Locatn_id (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - BlockCode (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RoomNo (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RoomType (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - DateofOccupancy (DATE, nullable=True)
+  - HFFeeInRs (MONEY, nullable=True)
+  - HFFeeInDollar (MONEY, nullable=True)
+  - ... (+9 more columns)
+
+Table: DemandDtlsbk532
+  - Locatn_id (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - BlockCode (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RoomNo (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RoomType (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - DateofOccupancy (DATE, nullable=True)
+  - HFFeeInRs (MONEY, nullable=True)
+  - HFFeeInDollar (MONEY, nullable=True)
+  - ... (+9 more columns)
+
+Table: Disciplinary_details
+  - ID (INTEGER, nullable=False)
+  - Rollno (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - DiscID (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - DiscDate (DATETIME, nullable=False)
+  - Remarks (VARCHAR(500) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - IsCancel (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - IsMoved (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - CancelRemarks (VARCHAR(500) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+15 more columns)
+
+Table: Disciplinary_details_07102025
+  - ID (INTEGER, nullable=False)
+  - Rollno (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - DiscID (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - DiscDate (DATETIME, nullable=False)
+  - Remarks (VARCHAR(500) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - IsCancel (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - IsMoved (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - CancelRemarks (VARCHAR(500) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+15 more columns)
+
+Table: Disciplinary_details_MAHEbkcup
+  - ID (INTEGER, nullable=False)
+  - Rollno (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - DiscID (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - DiscDate (DATETIME, nullable=False)
+  - Remarks (VARCHAR(500) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - IsCancel (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - IsMoved (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - CancelRemarks (VARCHAR(500) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+15 more columns)
+
+Table: Disciplinary_Loc_Map
+  - LocID (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - DiscID (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Amount (MONEY, nullable=False)
+
+Table: Disciplinary_M
+  - ID (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Name (VARCHAR(500) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+
+Table: Disciplinary_Tracker
+  - ID (INTEGER, nullable=False)
+  - Amount (MONEY, nullable=False)
+  - ActionDate (DATETIME, nullable=False)
+  - Remarks (VARCHAR(500) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - UserID (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Datem (DATETIME, nullable=True)
+  - LocationID (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Status (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+2 more columns)
+
+Table: DisciplinaryAction_M
+  - Actn_Code (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Actn_Desn (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+
+Table: DisciplinaryActionDetails
+  - Locatn_id (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ActionCd (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ActionDate (DATE, nullable=True)
+  - BlockCode (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RoomNo (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Amount (MONEY, nullable=True)
+  - Userid (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+3 more columns)
+
+Table: DuePay
+  - StudentID (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - HFee (DECIMAL(10, 2), nullable=True)
+  - UFee (DECIMAL(10, 2), nullable=True)
+  - HDFee (DECIMAL(10, 2), nullable=True)
+  - MFee (DECIMAL(10, 2), nullable=True)
+  - LAFee (DECIMAL(10, 2), nullable=True)
+  - TOTFee (DECIMAL(10, 2), nullable=True)
+  - HBal (DECIMAL(10, 2), nullable=True)
+  - ... (+13 more columns)
+
+Table: DuePay_Loc_Map
+  - DuePayType (INTEGER, nullable=False)
+  - LocID (INTEGER, nullable=False)
+
+Table: DueType_M
+  - ID (INTEGER, nullable=False)
+  - DueType (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - IsActive (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+
+Table: EmailQueue
+  - Id (INTEGER, nullable=False)
+  - Subject (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ToEmail (VARCHAR(200) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - FromEmail (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - CC (VARCHAR(200) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - BCC (VARCHAR(200) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - IsSent (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - MsgBody (VARCHAR(2000) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+15 more columns)
+
+Table: EmployeeID_Due
+  - EmployeeID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+
+Table: Fee_Comp_Floor_M
+  - LocationID (INTEGER, nullable=False)
+  - AcademicYear (INTEGER, nullable=False)
+  - BlockID (VARCHAR(3) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - FloorID (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - RoomTypeID (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - HostelFacilities (MONEY, nullable=True)
+  - UtilityAdvance (MONEY, nullable=True)
+  - HostelDeposit (MONEY, nullable=True)
+  - ... (+11 more columns)
+
+Table: Fee_Comp_M
+  - LocationID (INTEGER, nullable=False)
+  - AcademicYear (INTEGER, nullable=False)
+  - BlockID (VARCHAR(3) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - RoomTypeID (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - HostelFacilities (MONEY, nullable=True)
+  - UtilityAdvance (MONEY, nullable=True)
+  - HostelDeposit (MONEY, nullable=True)
+  - MessAdvance (MONEY, nullable=True)
+  - ... (+10 more columns)
+
+Table: FeeReceipt_IDGenerator
+  - Type (VARCHAR(3) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Seed (INTEGER, nullable=False)
+
+Table: Finance_MonthClose_Date
+  - DemandDate (DATE, nullable=True)
+
+Table: finecheck
+  - Rollno (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Narratn (VARCHAR(500) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+
+Table: FineDetails
+  - ID (INTEGER, nullable=False)
+  - LocatnID (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Narratn (VARCHAR(500) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Tran_Date (DATE, nullable=True)
+  - FineAmt (MONEY, nullable=True)
+  - PostedYN (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Userid (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+8 more columns)
+
+Table: finedetails_bk_mahe
+  - ID (INTEGER, nullable=False)
+  - LocatnID (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Narratn (VARCHAR(500) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Tran_Date (DATE, nullable=True)
+  - FineAmt (MONEY, nullable=True)
+  - PostedYN (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Userid (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+8 more columns)
+
+Table: finedetails_MAHEaugust
+  - ID (INTEGER, nullable=False)
+  - LocatnID (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Narratn (VARCHAR(500) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Tran_Date (DATE, nullable=True)
+  - FineAmt (MONEY, nullable=True)
+  - PostedYN (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Userid (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+8 more columns)
+
+Table: FineDetails_P_pending
+  - ID (INTEGER, nullable=False)
+  - LocatnID (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Narratn (VARCHAR(500) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Tran_Date (DATE, nullable=True)
+  - FineAmt (MONEY, nullable=True)
+  - PostedYN (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Userid (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+5 more columns)
+
+Table: FiscalYear_M
+  - FiscalYear (INTEGER, nullable=False)
+
+Table: Floor_M
+  - ID (VARCHAR(2) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Name (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+
+Table: FloorOrder
+  - BlockId (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RoomType (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - FloorId (VARCHAR(2) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ProcOrder (INTEGER, nullable=True)
+
+Table: GuestCharges_dtls
+  - ID (INTEGER, nullable=False)
+  - GuestType (VARCHAR(2) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Fromdate (DATETIME, nullable=False)
+  - ToDate (DATETIME, nullable=False)
+  - NumofDays (INTEGER, nullable=False)
+  - GuestName (VARCHAR(500) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - GuestID (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - GMobNo (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+35 more columns)
+
+Table: GuestCharges_dtls_tracker
+  - ID (INTEGER, nullable=False)
+  - GuestID (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Status (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ActionDate (DATETIME, nullable=True)
+  - ActionTime (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ActionRemarks (VARCHAR(500) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - BlockID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RoomID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+3 more columns)
+
+Table: GuestType_M
+  - ID (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Description (VARCHAR(500) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Active (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+
+Table: HDFC_ResponseStatus_M
+  - ID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Response_Msg (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Description (VARCHAR(200) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+
+Table: HMSOccupy
+  - BlockName (VARCHAR(500) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Room (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Seat (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - StudentID (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - OccupyDate (DATETIME, nullable=True)
+  - HMSBlock (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - HMSRoom (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - HMSSeat (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+1 more columns)
+
+Table: HRAMasterdata
+  - BlockCode (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Roomnumber (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - SeatID (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Rollno (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Name (VARCHAR(500) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - HMSblock (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - HMSRoom (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - HMSSeat (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+1 more columns)
+
+Table: HRAMasterdataNew
+  - BlockCode (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Roomnumber (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - SeatID (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Rollno (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Name (VARCHAR(500) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - HMSblock (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - HMSRoom (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - HMSSeat (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+1 more columns)
+
+Table: Id_Gen_OnlinePayment
+  - Type (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Seed (INTEGER, nullable=False)
+
+Table: Id_Gen_Receipt
+  - LocationID (INTEGER, nullable=False)
+  - StudentType (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Prefix (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Seed (INTEGER, nullable=False)
+  - PG (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+
+Table: Inmate_Ledger
+  - AcademicYear (INTEGER, nullable=False)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Status (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - OccupancyDate (DATETIME, nullable=True)
+  - VacancyDate (DATETIME, nullable=True)
+  - CreatedBy (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - CreatedDate (DATETIME, nullable=True)
+  - Alloteddate (DATETIME, nullable=True)
+  - ... (+9 more columns)
+
+Table: Inmate_Ledger_bk_30072025allotedseniors
+  - AcademicYear (INTEGER, nullable=False)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Status (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - OccupancyDate (DATETIME, nullable=True)
+  - VacancyDate (DATETIME, nullable=True)
+  - CreatedBy (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - CreatedDate (DATETIME, nullable=True)
+  - Alloteddate (DATETIME, nullable=True)
+  - ... (+9 more columns)
+
+Table: Inmate_Ledger_blr_beforeOccupany05082025
+  - AcademicYear (INTEGER, nullable=False)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Status (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - OccupancyDate (DATETIME, nullable=True)
+  - VacancyDate (DATETIME, nullable=True)
+  - CreatedBy (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - CreatedDate (DATETIME, nullable=True)
+  - Alloteddate (DATETIME, nullable=True)
+  - ... (+9 more columns)
+
+Table: Inmate_Ledger_shiftmovement2508
+  - AcademicYear (INTEGER, nullable=False)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Status (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - OccupancyDate (DATETIME, nullable=True)
+  - VacancyDate (DATETIME, nullable=True)
+  - CreatedBy (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - CreatedDate (DATETIME, nullable=True)
+  - Alloteddate (DATETIME, nullable=True)
+  - ... (+9 more columns)
+
+Table: Inst_Course_Map
+  - InstID (VARCHAR(5) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - CourseType (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+
+Table: Institution_M
+  - ID (VARCHAR(5) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Name (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - LocationID (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+
+Table: kmcmh2ldgr
+  - TypeInst (NVARCHAR(255) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - FromBlockCode (NVARCHAR(255) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - FromRoomNumber (NVARCHAR(255) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - FromTypeCode (NVARCHAR(255) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ToBlockCode (NVARCHAR(255) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ToRoomNumber (NVARCHAR(255) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ToTypeCode (NVARCHAR(255) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RollNo (NVARCHAR(255) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+10 more columns)
+
+Table: kmcmh2mast
+  - TypeInst (NVARCHAR(255) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RollNo (NVARCHAR(255) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Name (NVARCHAR(255) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - BlockCode (NVARCHAR(255) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RoomNumber (NVARCHAR(255) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - SeatID (NVARCHAR(255) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - DateOCC (NVARCHAR(255) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Flag (NVARCHAR(255) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+3 more columns)
+
+Table: Location_M
+  - ID (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Name (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - HasAppliance (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Atom_MerchantID (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - AtomUserID (VARCHAR(25) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - AtomPassword (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - AtomProductID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Atomphrase_Req (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+40 more columns)
+
+Table: MAHEVacateList
+  - Rollno (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+
+Table: MainMenu
+  - MenuId (INTEGER, nullable=False)
+  - MenuTitle (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Icon (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - SortOrder (INTEGER, nullable=True)
+  - MenuURL (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - divid (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+
+Table: Mess_M
+  - Mess_ID (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - MessName (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+
+Table: Messchangereq_Details
+  - Id (INTEGER, nullable=False)
+  - Studentid (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - AcademicYear (INTEGER, nullable=True)
+  - Seatid (VARCHAR(9) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Roomid (VARCHAR(7) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Blockid (VARCHAR(3) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Old_Messid (INTEGER, nullable=False)
+  - Old_MessLocEntryNo (INTEGER, nullable=False)
+  - ... (+15 more columns)
+
+Table: Messlocation_M
+  - Messven_Id (INTEGER, nullable=False)
+  - Entryno (INTEGER, nullable=False)
+  - Locationdetails (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - LocDescp (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - AvlForNewMessSel (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+
+Table: MessVendor_M
+  - Id (INTEGER, nullable=False)
+  - Name (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Locid (INTEGER, nullable=False)
+  - Userid (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+
+Table: MessYear
+  - ID (INTEGER, nullable=False)
+  - Year (INTEGER, nullable=False)
+  - Month (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Description (VARCHAR(500) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - MonthID (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+
+Table: Mutual_Req_ApprovalList
+  - ID (INTEGER, nullable=False)
+  - ReqID (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - StudentID (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - IsConfirm (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Remarks (VARCHAR(500) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - UserID (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Datem (DATETIME, nullable=False)
+
+Table: Mutual_Shift_Req_dtls
+  - ID (INTEGER, nullable=False)
+  - ReqStudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - ReqStBlockID (VARCHAR(3) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - ReqStuRoomType (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - ReqStSeatID (VARCHAR(9) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - NewStudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - NewStBlockID (VARCHAR(3) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - NewStRoomType (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - ... (+7 more columns)
+
+Table: Mutual_Shift_Req_dtls_bk2608
+  - ID (INTEGER, nullable=False)
+  - ReqStudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - ReqStBlockID (VARCHAR(3) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - ReqStuRoomType (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - ReqStSeatID (VARCHAR(9) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - NewStudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - NewStBlockID (VARCHAR(3) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - NewStRoomType (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - ... (+7 more columns)
+
+Table: Occupancy_tracker
+  - ID (INTEGER, nullable=False)
+  - SeatID (VARCHAR(9) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - RoomID (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Academicyear (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Status (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Remarks (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - UserID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+2 more columns)
+
+Table: OccupancyEntry
+  - AcademicYear (INTEGER, nullable=False)
+  - SeatID (VARCHAR(9) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - RoomID (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Status (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Remarks (VARCHAR(200) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - UserID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - datem (DATETIME, nullable=True)
+  - ... (+2 more columns)
+
+Table: Occupancyentrybk_02082025
+  - AcademicYear (INTEGER, nullable=False)
+  - SeatID (VARCHAR(9) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - RoomID (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Status (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Remarks (VARCHAR(200) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - UserID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - datem (DATETIME, nullable=True)
+  - ... (+2 more columns)
+
+Table: OccupancyMM
+  - Locatn_id (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - YrMon (VARCHAR(6) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - BlockCode (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RoomNo (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RoomType (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - TranDate (DATE, nullable=True)
+  - Action (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+10 more columns)
+
+Table: OccupancyMMAppliance
+  - Locatn_id (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - YrMon (VARCHAR(6) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Amount (MONEY, nullable=True)
+
+Table: OccupancyMMMTMC18092025
+  - Locatn_id (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - YrMon (VARCHAR(6) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - BlockCode (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RoomNo (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RoomType (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - TranDate (DATE, nullable=True)
+  - Action (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+10 more columns)
+
+Table: OccupancyUpdateTracker
+  - TrackerID (INTEGER, nullable=False)
+  - StudentID (NVARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - OldActionDate (DATETIME, nullable=True)
+  - NewActionDate (DATETIME, nullable=False)
+  - Remarks (NVARCHAR(1000) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - UpdatedBy (NVARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - UpdatedDate (DATETIME, nullable=True)
+  - TablesUpdated (NVARCHAR(500) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+
+Table: Offline_Pay_Details
+  - Rollno (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - FromDate (DATETIME, nullable=True)
+  - Todate (DATETIME, nullable=True)
+
+Table: Offline_Pay_Dtls_Tracker
+  - ID (INTEGER, nullable=False)
+  - Rollno (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Remarks (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - UserID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Datem (DATETIME, nullable=True)
+  - Action (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+
+Table: Offline_Pay_Remarks
+  - ID (INTEGER, nullable=False)
+  - Remarks (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+
+Table: Online_Process_Control_remove
+  - InstID (VARCHAR(5) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - CourseType (VARCHAR(5) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - IsOpen (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+
+Table: OnlinePayment_ApplianceDetails
+  - OrderID (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - RollNo (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - ApplianceID (INTEGER, nullable=False)
+  - Amount (MONEY, nullable=True)
+
+Table: OnlinePaymentDtls
+  - OrderID (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - RollNo (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - CurrencyType (VARCHAR(3) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - HostelAdvance (MONEY, nullable=True)
+  - UtilityAdvance (MONEY, nullable=True)
+  - HostelDeposit (MONEY, nullable=True)
+  - MessAdvance (MONEY, nullable=True)
+  - Laundary (MONEY, nullable=True)
+  - ... (+60 more columns)
+
+Table: OnlinePaymentDtls_01072025_V2
+  - OrderID (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - RollNo (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - CurrencyType (VARCHAR(3) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - HostelAdvance (MONEY, nullable=True)
+  - UtilityAdvance (MONEY, nullable=True)
+  - HostelDeposit (MONEY, nullable=True)
+  - MessAdvance (MONEY, nullable=True)
+  - Laundary (MONEY, nullable=True)
+  - ... (+57 more columns)
+
+Table: OnlinePaymentDtls_01072025_V4
+  - OrderID (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - RollNo (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - CurrencyType (VARCHAR(3) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - HostelAdvance (MONEY, nullable=True)
+  - UtilityAdvance (MONEY, nullable=True)
+  - HostelDeposit (MONEY, nullable=True)
+  - MessAdvance (MONEY, nullable=True)
+  - Laundary (MONEY, nullable=True)
+  - ... (+57 more columns)
+
+Table: OnlinePaymentDtls_backup
+  - OrderID (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - RollNo (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - CurrencyType (VARCHAR(3) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - HostelAdvance (MONEY, nullable=True)
+  - UtilityAdvance (MONEY, nullable=True)
+  - HostelDeposit (MONEY, nullable=True)
+  - MessAdvance (MONEY, nullable=True)
+  - Laundary (MONEY, nullable=True)
+  - ... (+55 more columns)
+
+Table: OnlinePaymentDtls_backup03072025
+  - OrderID (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - RollNo (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - CurrencyType (VARCHAR(3) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - HostelAdvance (MONEY, nullable=True)
+  - UtilityAdvance (MONEY, nullable=True)
+  - HostelDeposit (MONEY, nullable=True)
+  - MessAdvance (MONEY, nullable=True)
+  - Laundary (MONEY, nullable=True)
+  - ... (+57 more columns)
+
+Table: OnlinePaymentDtls_backup09072025
+  - OrderID (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - RollNo (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - CurrencyType (VARCHAR(3) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - HostelAdvance (MONEY, nullable=True)
+  - UtilityAdvance (MONEY, nullable=True)
+  - HostelDeposit (MONEY, nullable=True)
+  - MessAdvance (MONEY, nullable=True)
+  - Laundary (MONEY, nullable=True)
+  - ... (+57 more columns)
+
+Table: OnlinePaymentDtls_copy
+  - OrderID (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - RollNo (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - CurrencyType (VARCHAR(3) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - HostelAdvance (MONEY, nullable=True)
+  - UtilityAdvance (MONEY, nullable=True)
+  - HostelDeposit (MONEY, nullable=True)
+  - MessAdvance (MONEY, nullable=True)
+  - Laundary (MONEY, nullable=True)
+  - ... (+55 more columns)
+
+Table: OnlinePaymentDtls_Dtls_backup_11072025
+  - OrderID (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - RollNo (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - CurrencyType (VARCHAR(3) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - HostelAdvance (MONEY, nullable=True)
+  - UtilityAdvance (MONEY, nullable=True)
+  - HostelDeposit (MONEY, nullable=True)
+  - MessAdvance (MONEY, nullable=True)
+  - Laundary (MONEY, nullable=True)
+  - ... (+58 more columns)
+
+Table: OnlinePaymentDtls_requerymitafter
+  - OrderID (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - RollNo (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - CurrencyType (VARCHAR(3) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - HostelAdvance (MONEY, nullable=True)
+  - UtilityAdvance (MONEY, nullable=True)
+  - HostelDeposit (MONEY, nullable=True)
+  - MessAdvance (MONEY, nullable=True)
+  - Laundary (MONEY, nullable=True)
+  - ... (+57 more columns)
+
+Table: onlinetable_01072025
+  - OrderID (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - RollNo (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - CurrencyType (VARCHAR(3) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - HostelAdvance (MONEY, nullable=True)
+  - UtilityAdvance (MONEY, nullable=True)
+  - HostelDeposit (MONEY, nullable=True)
+  - MessAdvance (MONEY, nullable=True)
+  - Laundary (MONEY, nullable=True)
+  - ... (+57 more columns)
+
+Table: OptProcStatus
+  - Remarks (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ProcDate (DATETIME, nullable=True)
+
+Table: PayDetails
+  - OrderID (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Amount (MONEY, nullable=False)
+
+Table: PaymentMode_M
+  - ID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Mode (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - SortOrder (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - CurType (VARCHAR(3) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+
+Table: PayOrder_IDGen
+  - ID (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Seed (INTEGER, nullable=True)
+  - PayDescription (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+
+Table: Provisional_Allocation_Dtls
+  - ID (INTEGER, nullable=False)
+  - SeatID (VARCHAR(9) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Academicyear (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - OptionID (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RSDL (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - HostelFacilities (MONEY, nullable=True)
+  - UtilityAdvance (MONEY, nullable=True)
+  - ... (+20 more columns)
+
+Table: Provisional_Allocation_Dtls_01072025_V2
+  - ID (INTEGER, nullable=False)
+  - SeatID (VARCHAR(9) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Academicyear (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - OptionID (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RSDL (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - HostelFacilities (MONEY, nullable=True)
+  - UtilityAdvance (MONEY, nullable=True)
+  - ... (+19 more columns)
+
+Table: Provisional_Allocation_Dtls_01072025_V3
+  - ID (INTEGER, nullable=False)
+  - SeatID (VARCHAR(9) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Academicyear (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - OptionID (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RSDL (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - HostelFacilities (MONEY, nullable=True)
+  - UtilityAdvance (MONEY, nullable=True)
+  - ... (+19 more columns)
+
+Table: Provisional_Allocation_Dtls_01072025_V4
+  - ID (INTEGER, nullable=False)
+  - SeatID (VARCHAR(9) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Academicyear (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - OptionID (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RSDL (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - HostelFacilities (MONEY, nullable=True)
+  - UtilityAdvance (MONEY, nullable=True)
+  - ... (+19 more columns)
+
+Table: Provisional_Allocation_Dtls_backup_11072025
+  - ID (INTEGER, nullable=False)
+  - SeatID (VARCHAR(9) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Academicyear (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - OptionID (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RSDL (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - HostelFacilities (MONEY, nullable=True)
+  - UtilityAdvance (MONEY, nullable=True)
+  - ... (+19 more columns)
+
+Table: Provisional_Allocation_Dtls_BACKUP01072025
+  - ID (INTEGER, nullable=False)
+  - SeatID (VARCHAR(9) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Academicyear (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - OptionID (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RSDL (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - HostelFacilities (MONEY, nullable=True)
+  - UtilityAdvance (MONEY, nullable=True)
+  - ... (+19 more columns)
+
+Table: Provisional_Allocation_Dtls_backup03072025
+  - ID (INTEGER, nullable=False)
+  - SeatID (VARCHAR(9) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Academicyear (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - OptionID (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RSDL (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - HostelFacilities (MONEY, nullable=True)
+  - UtilityAdvance (MONEY, nullable=True)
+  - ... (+19 more columns)
+
+Table: Provisional_Allocation_Dtls_backup09072025
+  - ID (INTEGER, nullable=False)
+  - SeatID (VARCHAR(9) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Academicyear (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - OptionID (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RSDL (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - HostelFacilities (MONEY, nullable=True)
+  - UtilityAdvance (MONEY, nullable=True)
+  - ... (+19 more columns)
+
+Table: Provisional_Allocation_Dtls_BACKUP27062025
+  - ID (INTEGER, nullable=False)
+  - SeatID (VARCHAR(9) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Academicyear (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - OptionID (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RSDL (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - HostelFacilities (MONEY, nullable=True)
+  - UtilityAdvance (MONEY, nullable=True)
+  - ... (+19 more columns)
+
+Table: Provisional_Allocation_Dtls_bk_16072025
+  - ID (INTEGER, nullable=False)
+  - SeatID (VARCHAR(9) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Academicyear (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - OptionID (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RSDL (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - HostelFacilities (MONEY, nullable=True)
+  - UtilityAdvance (MONEY, nullable=True)
+  - ... (+19 more columns)
+
+Table: Provisional_Allocation_Dtls_requerymitafter
+  - ID (INTEGER, nullable=False)
+  - SeatID (VARCHAR(9) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Academicyear (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - OptionID (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RSDL (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - HostelFacilities (MONEY, nullable=True)
+  - UtilityAdvance (MONEY, nullable=True)
+  - ... (+19 more columns)
+
+Table: Provisional_Allocation_Dtls1
+  - ID (INTEGER, nullable=False)
+  - SeatID (VARCHAR(9) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Academicyear (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - OptionID (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RSDL (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - HostelFacilities (MONEY, nullable=True)
+  - UtilityAdvance (MONEY, nullable=True)
+  - ... (+19 more columns)
+
+Table: Provisional_Dtls_Tracker
+  - ID (INTEGER, nullable=False)
+  - SeatID (VARCHAR(9) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Action (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - UserID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Datem (DATETIME, nullable=False)
+
+Table: Role_M
+  - ID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Name (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Priority (INTEGER, nullable=True)
+
+Table: RoleMenuMapping
+  - MenuID (VARCHAR(3) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - RoleID (VARCHAR(5) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - SubMenuID (VARCHAR(5) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+
+Table: Rollnocheck
+  - RollNo (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Name (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - hmsrollno (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+
+Table: Room_M
+  - ID (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - BlockID (VARCHAR(3) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - FloorID (VARCHAR(2) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Display_Name (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RoomType (VARCHAR(5) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - SeatCount (INTEGER, nullable=True)
+  - IsLocked (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Vac_Count (INTEGER, nullable=True)
+  - ... (+10 more columns)
+
+Table: room_m_backup07072025
+  - ID (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - BlockID (VARCHAR(3) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - FloorID (VARCHAR(2) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Display_Name (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RoomType (VARCHAR(5) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - SeatCount (INTEGER, nullable=True)
+  - IsLocked (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Vac_Count (INTEGER, nullable=True)
+  - ... (+8 more columns)
+
+Table: Room_M_bkroomremovalofmahe
+  - ID (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - BlockID (VARCHAR(3) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - FloorID (VARCHAR(2) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Display_Name (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RoomType (VARCHAR(5) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - SeatCount (INTEGER, nullable=True)
+  - IsLocked (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Vac_Count (INTEGER, nullable=True)
+  - ... (+10 more columns)
+
+Table: RoomAllocationMap
+  - RoomID (VARCHAR(7) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - AllocationID (VARCHAR(2) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+
+Table: RoomCourseMap
+  - RoomID (VARCHAR(7) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - CourseType (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Locked (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+
+Table: RoomCourseMap_backup07072025
+  - RoomID (VARCHAR(7) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - CourseType (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Locked (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+
+Table: RoomType_Change
+  - ID (INTEGER, nullable=False)
+  - RoomID (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - EffectiveDate (DATE, nullable=True)
+  - RoomTypeID (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - CreatedBy (VARCHAR(30) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - CreatedDate (DATETIME, nullable=True)
+
+Table: RoomType_M
+  - ID (VARCHAR(5) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Name (VARCHAR(200) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - IsActive (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - IsStandard (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - IsDeluxe (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - IsAttachedWashroom (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - IsCommonWashroom (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ACApplicable (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+6 more columns)
+
+Table: RoomTypeUpdateHistory
+  - ID (INTEGER, nullable=False)
+  - RoomID (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RoomNumber (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - BlockID (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - OldRoomTypeID (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - NewRoomTypeID (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - OldSeatCount (INTEGER, nullable=True)
+  - NewSeatCount (INTEGER, nullable=True)
+  - ... (+7 more columns)
+
+Table: RoomUnlock_Jobrun_Tracker
+  - ID (INTEGER, nullable=False)
+  - DateofRun (DATETIME, nullable=False)
+  - BlockedStudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - BlockedTime (DATETIME, nullable=True)
+  - SeatID (VARCHAR(9) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - AcademicYear (INTEGER, nullable=True)
+  - CreatedDate (DATETIME, nullable=True)
+  - CreatedBy (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+
+Table: Sallocation_02092025
+  - ID (INTEGER, nullable=False)
+  - SeatID (VARCHAR(9) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - BlockID (VARCHAR(3) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - RoomID (VARCHAR(7) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Action (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - ActionDate (DATETIME, nullable=False)
+  - Academicyear (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - ... (+5 more columns)
+
+Table: Seat_Details_M
+  - SeatID (VARCHAR(9) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - RoomID (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Alloted_StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Status (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Ext_Stay (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Ext_StayStartDate (DATETIME, nullable=True)
+  - No_of_Days (INTEGER, nullable=True)
+  - IsBlocked (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+12 more columns)
+
+Table: Seat_Details_M_01072025
+  - SeatID (VARCHAR(9) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - RoomID (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Alloted_StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Status (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Ext_Stay (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Ext_StayStartDate (DATETIME, nullable=True)
+  - No_of_Days (INTEGER, nullable=True)
+  - IsBlocked (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+12 more columns)
+
+Table: Seat_Details_M_01072025_v4
+  - SeatID (VARCHAR(9) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - RoomID (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Alloted_StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Status (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Ext_Stay (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Ext_StayStartDate (DATETIME, nullable=True)
+  - No_of_Days (INTEGER, nullable=True)
+  - IsBlocked (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+12 more columns)
+
+Table: seat_details_M_04072025
+  - SeatID (VARCHAR(9) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - RoomID (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Alloted_StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Status (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Ext_Stay (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Ext_StayStartDate (DATETIME, nullable=True)
+  - No_of_Days (INTEGER, nullable=True)
+  - IsBlocked (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+12 more columns)
+
+Table: Seat_Details_M_backup_11072025
+  - SeatID (VARCHAR(9) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - RoomID (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Alloted_StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Status (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Ext_Stay (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Ext_StayStartDate (DATETIME, nullable=True)
+  - No_of_Days (INTEGER, nullable=True)
+  - IsBlocked (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+12 more columns)
+
+Table: Seat_Details_M_backup03072025
+  - SeatID (VARCHAR(9) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - RoomID (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Alloted_StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Status (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Ext_Stay (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Ext_StayStartDate (DATETIME, nullable=True)
+  - No_of_Days (INTEGER, nullable=True)
+  - IsBlocked (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+12 more columns)
+
+Table: Seat_Details_M_backup09072025
+  - SeatID (VARCHAR(9) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - RoomID (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Alloted_StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Status (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Ext_Stay (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Ext_StayStartDate (DATETIME, nullable=True)
+  - No_of_Days (INTEGER, nullable=True)
+  - IsBlocked (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+12 more columns)
+
+Table: seat_Details_M_bk06082025
+  - SeatID (VARCHAR(9) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - RoomID (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Alloted_StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Status (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Ext_Stay (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Ext_StayStartDate (DATETIME, nullable=True)
+  - No_of_Days (INTEGER, nullable=True)
+  - IsBlocked (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+12 more columns)
+
+Table: seat_details_M_bk29072025
+  - SeatID (VARCHAR(9) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - RoomID (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Alloted_StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Status (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Ext_Stay (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Ext_StayStartDate (DATETIME, nullable=True)
+  - No_of_Days (INTEGER, nullable=True)
+  - IsBlocked (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+12 more columns)
+
+Table: Seat_Details_M_bkseatremovalofmahe
+  - SeatID (VARCHAR(9) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - RoomID (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Alloted_StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Status (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Ext_Stay (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Ext_StayStartDate (DATETIME, nullable=True)
+  - No_of_Days (INTEGER, nullable=True)
+  - IsBlocked (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+12 more columns)
+
+Table: Seat_Details_M_blr_beforeOccupany05082025
+  - SeatID (VARCHAR(9) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - RoomID (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Alloted_StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Status (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Ext_Stay (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Ext_StayStartDate (DATETIME, nullable=True)
+  - No_of_Days (INTEGER, nullable=True)
+  - IsBlocked (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+12 more columns)
+
+Table: seat_details_M_occupyblocked
+  - SeatID (VARCHAR(9) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - RoomID (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Alloted_StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Status (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Ext_Stay (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Ext_StayStartDate (DATETIME, nullable=True)
+  - No_of_Days (INTEGER, nullable=True)
+  - IsBlocked (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+12 more columns)
+
+Table: Seat_Details_M_provisionaldatacopiedoffline
+  - SeatID (VARCHAR(9) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - RoomID (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Alloted_StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Status (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Ext_Stay (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Ext_StayStartDate (DATETIME, nullable=True)
+  - No_of_Days (INTEGER, nullable=True)
+  - IsBlocked (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+12 more columns)
+
+Table: Seat_Details_M_requerymitafter
+  - SeatID (VARCHAR(9) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - RoomID (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Alloted_StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Status (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Ext_Stay (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Ext_StayStartDate (DATETIME, nullable=True)
+  - No_of_Days (INTEGER, nullable=True)
+  - IsBlocked (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+12 more columns)
+
+Table: Seat_Details_M_shiftmovement2508
+  - SeatID (VARCHAR(9) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - RoomID (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Alloted_StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Status (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Ext_Stay (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Ext_StayStartDate (DATETIME, nullable=True)
+  - No_of_Days (INTEGER, nullable=True)
+  - IsBlocked (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+12 more columns)
+
+Table: seat_details_M_Temp
+  - SeatID (VARCHAR(9) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - RoomID (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Alloted_StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Status (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ActionDate (DATETIME, nullable=True)
+  - BlockId (VARCHAR(3) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+
+Table: seat_details_M_TempProc
+  - SeatID (VARCHAR(9) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - RoomID (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Alloted_StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Status (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ActionDate (DATETIME, nullable=True)
+  - BlockId (VARCHAR(3) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Datem (DATETIME, nullable=True)
+
+Table: Seat_Details_Mbackup01072025
+  - SeatID (VARCHAR(9) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - RoomID (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Alloted_StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Status (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Ext_Stay (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Ext_StayStartDate (DATETIME, nullable=True)
+  - No_of_Days (INTEGER, nullable=True)
+  - IsBlocked (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+12 more columns)
+
+Table: seat_mahe
+  - SeatID (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - allotedstudentid (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - blockedstudentid (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+
+Table: Seat_Txn_MigrationList
+  - StudentID (INTEGER, nullable=True)
+  - Year2024 (INTEGER, nullable=True)
+  - Action2024 (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Status2024 (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ActionDate2024 (DATETIME, nullable=True)
+  - Year2025 (INTEGER, nullable=True)
+  - Action2025 (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Status2025 (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+1 more columns)
+
+Table: Seat_Txn_MigrationList_2025ACYRISSUE
+  - StudentID (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Year2024 (INTEGER, nullable=True)
+  - Action2024 (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Status2024 (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ActionDate2024 (DATETIME, nullable=True)
+  - Year2025 (INTEGER, nullable=True)
+  - Action2025 (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Status2025 (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+1 more columns)
+
+Table: Seat_Txn_tracker
+  - ID (INTEGER, nullable=False)
+  - SeatID (VARCHAR(9) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - BlockID (VARCHAR(3) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - RoomID (VARCHAR(7) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Action (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - ActionDate (DATETIME, nullable=False)
+  - Academicyear (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - ... (+5 more columns)
+
+Table: Seat_Txn_tracker_ALLOTMENTAction
+  - ID (INTEGER, nullable=False)
+  - SeatID (VARCHAR(9) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - BlockID (VARCHAR(3) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - RoomID (VARCHAR(7) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Action (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - ActionDate (DATETIME, nullable=False)
+  - Academicyear (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - ... (+4 more columns)
+
+Table: Seat_Txn_tracker_beforeOccupancy
+  - ID (INTEGER, nullable=False)
+  - SeatID (VARCHAR(9) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - BlockID (VARCHAR(3) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - RoomID (VARCHAR(7) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Action (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - ActionDate (DATETIME, nullable=False)
+  - Academicyear (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - ... (+4 more columns)
+
+Table: Seat_Txn_tracker_bk_01092025
+  - ID (INTEGER, nullable=False)
+  - SeatID (VARCHAR(9) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - BlockID (VARCHAR(3) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - RoomID (VARCHAR(7) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Action (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - ActionDate (DATETIME, nullable=False)
+  - Academicyear (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - ... (+5 more columns)
+
+Table: Seat_Txn_Tracker_intershiftupdate
+  - ID (INTEGER, nullable=False)
+  - SeatID (VARCHAR(9) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - BlockID (VARCHAR(3) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - RoomID (VARCHAR(7) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Action (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - ActionDate (DATETIME, nullable=False)
+  - Academicyear (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - ... (+5 more columns)
+
+Table: Seat_Txn_Tracker_IsDeletedYEntries27092025
+  - ID (INTEGER, nullable=False)
+  - SeatID (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - StudentID (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Action (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Status (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ActionDate (DATETIME, nullable=True)
+  - IsDeleted (CHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+
+Table: Seat_Txn_Tracker_IsDeletedYEntries27092025_MAHE
+  - ID (INTEGER, nullable=False)
+  - SeatID (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - StudentID (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Action (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Status (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ActionDate (DATETIME, nullable=True)
+  - IsDeleted (CHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+
+Table: Seat_Txn_tracker_OapprovetoShiftoccupy
+  - ID (INTEGER, nullable=False)
+  - SeatID (VARCHAR(9) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - BlockID (VARCHAR(3) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - RoomID (VARCHAR(7) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Action (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - ActionDate (DATETIME, nullable=False)
+  - Academicyear (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - ... (+5 more columns)
+
+Table: Seat_Txn_tracker_shift
+  - ID (INTEGER, nullable=False)
+  - SeatID (VARCHAR(9) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - BlockID (VARCHAR(3) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - RoomID (VARCHAR(7) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Action (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - ActionDate (DATETIME, nullable=False)
+  - Academicyear (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - ... (+4 more columns)
+
+Table: Seat_Txn_tracker_shiftconfirmedtoshiftaoccupy
+  - ID (INTEGER, nullable=False)
+  - SeatID (VARCHAR(9) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - BlockID (VARCHAR(3) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - RoomID (VARCHAR(7) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Action (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - ActionDate (DATETIME, nullable=False)
+  - Academicyear (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - ... (+5 more columns)
+
+Table: Seat_Txn_tracker_shiftmovement2508
+  - ID (INTEGER, nullable=False)
+  - SeatID (VARCHAR(9) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - BlockID (VARCHAR(3) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - RoomID (VARCHAR(7) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Action (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - ActionDate (DATETIME, nullable=False)
+  - Academicyear (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - ... (+5 more columns)
+
+Table: Seat_Txn_trackerbk_02082025
+  - ID (INTEGER, nullable=False)
+  - SeatID (VARCHAR(9) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - BlockID (VARCHAR(3) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - RoomID (VARCHAR(7) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Action (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - ActionDate (DATETIME, nullable=False)
+  - Academicyear (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - ... (+4 more columns)
+
+Table: shashi
+  - srollno (VARCHAR(15) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - sAplNo (BIGINT, nullable=True)
+  - RollNo (VARCHAR(15) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - AplNo (BIGINT, nullable=True)
+  - ClassCode (VARCHAR(6) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - INSTID (CHAR(3) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - CatgCode (CHAR(3) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+
+Table: shashi2
+  - srollno (VARCHAR(15) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - sAplNo (BIGINT, nullable=True)
+  - RollNo (VARCHAR(15) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - AplNo (BIGINT, nullable=True)
+  - ClassCode (VARCHAR(6) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - INSTID (CHAR(3) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - CatgCode (CHAR(3) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+
+Table: shashimit
+  - srollno (VARCHAR(15) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - sAplNo (BIGINT, nullable=True)
+  - RollNo (VARCHAR(15) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - AplNo (BIGINT, nullable=True)
+  - ClassCode (VARCHAR(6) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - INSTID (CHAR(3) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - CatgCode (CHAR(3) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+
+Table: shashimit2
+  - srollno (VARCHAR(15) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - sAplNo (BIGINT, nullable=True)
+  - RollNo (VARCHAR(15) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - AplNo (BIGINT, nullable=True)
+  - ClassCode (VARCHAR(6) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - INSTID (CHAR(3) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - CatgCode (CHAR(3) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+
+Table: Shift_Confirm_Traker
+  - RefID (INTEGER, nullable=False)
+  - StudentID (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Shiftdate (DATETIME, nullable=True)
+  - Confirmdate (DATETIME, nullable=True)
+  - userid (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Remarks (VARCHAR(1000) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+
+Table: Shift_Req_Dtls
+  - ID (INTEGER, nullable=False)
+  - CurrentSeatID (VARCHAR(9) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - CurrentRoomType (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - ReqStudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - ReqBlock (VARCHAR(3) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - RoomType (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Status (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - ShiftDate (DATETIME, nullable=True)
+  - ... (+23 more columns)
+
+Table: Shift_Req_Dtls_250825
+  - ID (INTEGER, nullable=False)
+  - CurrentSeatID (VARCHAR(9) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - CurrentRoomType (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - ReqStudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - ReqBlock (VARCHAR(3) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - RoomType (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Status (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - ShiftDate (DATETIME, nullable=True)
+  - ... (+22 more columns)
+
+Table: Shift_Req_Dtls_shiftmovement2508
+  - ID (INTEGER, nullable=False)
+  - CurrentSeatID (VARCHAR(9) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - CurrentRoomType (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - ReqStudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - ReqBlock (VARCHAR(3) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - RoomType (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Status (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - ShiftDate (DATETIME, nullable=True)
+  - ... (+23 more columns)
+
+Table: ShiftAmountUpdateHistory
+  - ID (INTEGER, nullable=False)
+  - StudentID (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RollNumber (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - OldHostelFacilities (DECIMAL(10, 2), nullable=True)
+  - NewHostelFacilities (DECIMAL(10, 2), nullable=True)
+  - OldUtilityAdvance (DECIMAL(10, 2), nullable=True)
+  - NewUtilityAdvance (DECIMAL(10, 2), nullable=True)
+  - OldHostelDeposit (DECIMAL(10, 2), nullable=True)
+  - ... (+12 more columns)
+
+Table: Status_M
+  - ID (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Description (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+
+Table: Student_Academic_Tracker
+  - ID (INTEGER, nullable=False)
+  - Rollno (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Academicstartdate (DATETIME, nullable=False)
+  - Academicenddate (DATETIME, nullable=False)
+  - UserID (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Datem (DATETIME, nullable=False)
+  - Academicyear (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - remarks (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+1 more columns)
+
+Table: Student_Details
+  - DateOfEnrolment (DATETIME, nullable=True)
+  - InstitutionID (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - StudentUniqueEnrolmentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Name (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Gender (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Emailid (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Categorywise (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - YearOfEnrolmentToCourse (VARCHAR(15) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+36 more columns)
+
+Table: Student_Details_app
+  - DateOfEnrolment (DATETIME, nullable=True)
+  - InstitutionID (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - StudentUniqueEnrolmentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Name (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Gender (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Emailid (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Categorywise (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - YearOfEnrolmentToCourse (VARCHAR(15) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+20 more columns)
+
+Table: Student_details_bk_23082015
+  - DateOfEnrolment (DATETIME, nullable=True)
+  - InstitutionID (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - StudentUniqueEnrolmentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Name (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Gender (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Emailid (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Categorywise (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - YearOfEnrolmentToCourse (VARCHAR(15) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+25 more columns)
+
+Table: Student_Details_TMP
+  - DateOfEnrolment (DATETIME, nullable=True)
+  - InstitutionID (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - StudentUniqueEnrolmentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Name (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Gender (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Emailid (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Categorywise (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - YearOfEnrolmentToCourse (VARCHAR(15) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+20 more columns)
+
+Table: Student_details_Yogish
+  - DateOfEnrolment (DATETIME, nullable=True)
+  - InstitutionID (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - StudentUniqueEnrolmentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Name (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Gender (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Emailid (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Categorywise (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - YearOfEnrolmentToCourse (VARCHAR(15) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+20 more columns)
+
+Table: Student_Details_yogish1
+  - DateOfEnrolment (DATETIME, nullable=True)
+  - InstitutionID (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - StudentUniqueEnrolmentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Name (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Gender (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Emailid (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Categorywise (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - YearOfEnrolmentToCourse (VARCHAR(15) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+20 more columns)
+
+Table: Student_Pay_Info
+  - ID (INTEGER, nullable=False)
+  - Academicyear (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - SeatID (VARCHAR(9) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Action (VARCHAR(500) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - HostelFacilities (MONEY, nullable=True)
+  - UtilityAdvance (MONEY, nullable=True)
+  - HostelDeposit (MONEY, nullable=True)
+  - ... (+11 more columns)
+
+Table: Student_Pay_Info_backup
+  - ID (INTEGER, nullable=False)
+  - Academicyear (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - SeatID (VARCHAR(9) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Action (VARCHAR(500) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - HostelFacilities (MONEY, nullable=True)
+  - UtilityAdvance (MONEY, nullable=True)
+  - HostelDeposit (MONEY, nullable=True)
+  - ... (+8 more columns)
+
+Table: student_pay_info_bkmututal2608
+  - ID (INTEGER, nullable=False)
+  - Academicyear (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - SeatID (VARCHAR(9) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Action (VARCHAR(500) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - HostelFacilities (MONEY, nullable=True)
+  - UtilityAdvance (MONEY, nullable=True)
+  - HostelDeposit (MONEY, nullable=True)
+  - ... (+10 more columns)
+
+Table: Student_VacateChecklistDetails
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - EntryNo (INTEGER, nullable=False)
+  - VacateID (INTEGER, nullable=True)
+  - ChecklistID (INTEGER, nullable=True)
+  - IsSelected (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Remarks (VARCHAR(500) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - CreatedBy (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - CreatedDate (DATETIME, nullable=True)
+
+Table: Student_VacateMess_StatusDetails
+  - ID (INTEGER, nullable=False)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - VacateID (INTEGER, nullable=False)
+  - MessUserID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ReviewStatus (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ReviewedOn (DATETIME, nullable=True)
+  - CreatedDate (DATETIME, nullable=True)
+
+Table: student_vacateStatus_Tracker
+  - ID (INTEGER, nullable=False)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - PrevStatus (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - NewStatus (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Comment (VARCHAR COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - CreatedDate (DATETIME, nullable=True)
+  - CreatedBy (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - VacateID (INTEGER, nullable=True)
+  - ... (+2 more columns)
+
+Table: Student_WithdrawalDetails
+  - ID (INTEGER, nullable=False)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - AcademicYear (INTEGER, nullable=False)
+  - SeatID (VARCHAR(9) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Type (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Status (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Reason (INTEGER, nullable=True)
+  - ReasonDetails (VARCHAR COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+30 more columns)
+
+Table: student_WithdrawStatus_Tracker
+  - ID (INTEGER, nullable=False)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - PrevStatus (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - NewStatus (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Comment (VARCHAR COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - CreatedDate (DATETIME, nullable=True)
+  - CreatedBy (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+
+Table: studentbak
+  - DateOfEnrolment (DATETIME, nullable=True)
+  - InstitutionID (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - StudentUniqueEnrolmentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Name (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Gender (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Emailid (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Categorywise (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - YearOfEnrolmentToCourse (VARCHAR(15) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+20 more columns)
+
+Table: StudentCategory_M
+  - ID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Name (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - CategoryType (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+
+Table: StudentCGPA
+  - StudentID (VARCHAR(15) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - HMSYear (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RefStud_YrSem (INTEGER, nullable=True)
+  - CGPA_GPA (NUMERIC(10, 4), nullable=True)
+
+Table: StudentOptAppl
+  - Loctn_ID (VARCHAR(5) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - StudentID (VARCHAR(15) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - HMSYear (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - AplStatus (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - AplDate (DATETIME, nullable=True)
+  - TotalPrefCount (INTEGER, nullable=True)
+  - AllotedPrefId (INTEGER, nullable=True)
+  - IsConsidered (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+2 more columns)
+
+Table: StudentOptAppl_Proc
+  - Loctn_ID (VARCHAR(5) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - StudentID (VARCHAR(15) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - HMSYear (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - AplStatus (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - AplDate (DATETIME, nullable=True)
+  - TotalPrefCount (INTEGER, nullable=True)
+  - AllotedPrefId (INTEGER, nullable=True)
+  - IsConsidered (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+3 more columns)
+
+Table: StudentOptDtls
+  - StudentID (VARCHAR(15) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - HMSYear (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Prefid (INTEGER, nullable=True)
+  - BlockID (VARCHAR(3) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RoomType (VARCHAR(15) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+
+Table: StudentParentDtls
+  - Studentid (VARCHAR(15) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - FatherEmail_ID (NVARCHAR(255) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - MotherEmail_ID (NVARCHAR(255) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - GuardianEmail_ID (NVARCHAR(255) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+
+Table: SubMenu
+  - SubMenuId (INTEGER, nullable=False)
+  - MenuId (INTEGER, nullable=False)
+  - SubMenuTitle (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - SortOrder (INTEGER, nullable=False)
+  - SubMenuURL (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+
+Table: temp_Inmate_Ledger1
+  - AcademicYear (INTEGER, nullable=False)
+  - StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Status (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - OccupancyDate (DATETIME, nullable=True)
+  - VacancyDate (DATETIME, nullable=True)
+  - CreatedBy (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - CreatedDate (DATETIME, nullable=True)
+  - Alloteddate (DATETIME, nullable=True)
+  - ... (+9 more columns)
+
+Table: Temp_Seat_Details_M
+  - SeatID (VARCHAR(9) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - RoomID (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Alloted_StudentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Status (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Ext_Stay (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Ext_StayStartDate (DATETIME, nullable=True)
+  - No_of_Days (INTEGER, nullable=True)
+  - IsBlocked (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+12 more columns)
+
+Table: temp1
+  - rollno (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+
+Table: temp2
+  - rollno (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+
+Table: temp3
+  - rollno (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - toblock (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - toroom (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - dateofoccupancy (DATETIME, nullable=True)
+  - currentseadtdate (DATETIME, nullable=True)
+  - currentseattxndate (DATETIME, nullable=True)
+  - seatid (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+
+Table: temp5
+  - rollno (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+
+Table: TempHRA08072025
+  - Rollno (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Name (VARBINARY(500), nullable=True)
+  - Block (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Room (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Seat (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - HMSBlock (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - HMSRoom (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - HMSSeat (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+1 more columns)
+
+Table: TempHRA09072025
+  - Rollno (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Name (VARBINARY(500), nullable=True)
+  - Block (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Room (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Seat (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - HMSBlock (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - HMSRoom (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - HMSSeat (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+1 more columns)
+
+Table: temphramasterregister
+  - TypeInst (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Block (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Roomno (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - seatid (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - rollno (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Name (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - hostelblock (VARCHAR(3) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - hostelroom (VARCHAR(7) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+1 more columns)
+
+Table: TempNRI09072025
+  - RollNo (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Name (VARCHAR(500) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Block (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Room (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - SeatID (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - HMSBlock (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - HMSRoom (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - HMSSeat (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+1 more columns)
+
+Table: TempNRIAllotment
+  - Rollno (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Name (VARCHAR(500) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Block (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Room (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - SeatID (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - HMSBlock (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - HMSRoom (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - HMSSeatID (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+1 more columns)
+
+Table: TempOnlineAllotmentDtls
+  - StudentID (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - PaidINR (MONEY, nullable=True)
+  - ReceiptNo (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+
+Table: TempReport
+  - SlNo (INTEGER, nullable=False)
+  - Rollno (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Name (VARCHAR(500) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Block (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Room (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Type (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Category (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Total (MONEY, nullable=True)
+  - ... (+1 more columns)
+
+Table: TempReport1
+  - SlNo (INTEGER, nullable=False)
+  - Rollno (VARCHAR(500) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Name (VARCHAR(500) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Block (VARCHAR(500) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Room (VARCHAR(500) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Type (VARCHAR(500) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Category (VARCHAR(500) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Total (MONEY, nullable=True)
+  - ... (+1 more columns)
+
+Table: tempstudent_details
+  - DateOfEnrolment (DATETIME, nullable=True)
+  - InstitutionID (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - StudentUniqueEnrolmentID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Name (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Gender (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Emailid (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Categorywise (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - YearOfEnrolmentToCourse (VARCHAR(15) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+20 more columns)
+
+Table: TMP_ONLINE
+  - rollno (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - txnid (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - mode (VARCHAR(5) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - refno (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - comment (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ORDERID (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+
+Table: tmpHMSLedger4
+  - RollNo (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Name (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Blockcode (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Blockname (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Room (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RoomId (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RoomTypeDesc (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - RoomType (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - ... (+21 more columns)
+
+Table: TMPRoomSeatCheck
+  - Block1 (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - roomno1 (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - seatno1 (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - roomtype1 (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - roomid (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - seatid (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - seatnohms (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+
+Table: TMPRoomT
+  - ID (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - Display_Name (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - BlockID (VARCHAR(3) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - SeatCount (INTEGER, nullable=True)
+  - blockname (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - TotalSeats (INTEGER, nullable=True)
+  - Name (VARCHAR(200) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - FloorID (VARCHAR(2) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+
+Table: User_Block_Map
+  - UserID (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+  - BlockID (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=False)
+
+Table: VacateChecklist_Loc_Map
+  - VacateChecklistID (INTEGER, nullable=False)
+  - LocID (INTEGER, nullable=False)
+
+Table: VacateChecklist_M
+  - ID (INTEGER, nullable=False)
+  - Description (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+
+Table: VacateType_M
+  - ID (INTEGER, nullable=False)
+  - Description (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - IsActive (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - HasRefund (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - UploadAvl (VARCHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+
+Table: YearSemOrder
+  - Catg (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - Gender (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS", nullable=True)
+  - YearSem (INTEGER, nullable=True)
+  - ProcOrder (INTEGER, nullable=True)
+  - PerctoProc (INTEGER, nullable=True)
+
+=== RULES FOR BI AGENT ===
+1) ONLY produce parameterized SELECT SQL queries. No INSERT/UPDATE/DELETE/ALTER/DROP.
+2) Use only the tables and columns listed above.
+3) If the user asks to modify data, respond: 'This requires the Management Agent. I can only generate SELECT queries.'
+4) If ambiguous, ask for exactly one clarifying parameter (date range, hostel block, student id, etc.).
+5) Always return the SQL wrapped in ```sql ... ``` when responding with SQL.
