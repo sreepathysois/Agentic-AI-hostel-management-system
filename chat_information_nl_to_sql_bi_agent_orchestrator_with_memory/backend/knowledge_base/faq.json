@@ -1,0 +1,23 @@
+{
+  "general": {
+    "check_in_time": "Check-in time is between 9 AM to 6 PM.",
+    "visiting_hours": "Parents can visit between 9 AM and 7 PM.",
+    "warden_contact": "+91-9876543210 (Mr. Kumar, Chief Warden)",
+    "emergency_contact": "+91-9876500000 (24/7 Security)"
+  },
+  "rules": {
+    "gate_closing_time": "Main gate closes at 10 PM.",
+    "id_required": "Students must carry hostel ID at all times.",
+    "prohibited_items": [
+      "Induction stove",
+      "Electric heaters",
+      "Alcohol or drugs",
+      "High-powered speakers"
+    ]
+  },
+  "laundry": {
+    "timings": "Laundry collection on Mon/Wed/Fri (7 AM - 9 AM)",
+    "pricing_per_kg": 25
+  }
+}
+

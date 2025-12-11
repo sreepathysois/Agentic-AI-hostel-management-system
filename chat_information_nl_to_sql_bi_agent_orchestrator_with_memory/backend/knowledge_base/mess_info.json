@@ -1,0 +1,19 @@
+{
+  "mess_timings": {
+    "breakfast": "7:00 AM - 9:00 AM",
+    "lunch": "12:30 PM - 2:00 PM",
+    "snacks": "4:30 PM - 5:30 PM",
+    "dinner": "7:00 PM - 9:00 PM"
+  },
+  "weekly_menu_sample": {
+    "monday": ["Idli & Sambar", "Rice + Dal + Veg Curry", "Tea & Biscuit", "Chapati + Paneer Masala"],
+    "tuesday": ["Poha", "Curd Rice", "Tea & Pakoda", "Rice + Chicken Curry"],
+    "wednesday": ["Upma", "Veg Fried Rice", "Tea & Bun", "Chapati + Veg Kurma"]
+  },
+  "mess_rules": [
+    "Outside food allowed but must be consumed in designated areas.",
+    "Reusable plates encouraged; avoid food wastage.",
+    "Special diet meals available on request."
+  ]
+}
+

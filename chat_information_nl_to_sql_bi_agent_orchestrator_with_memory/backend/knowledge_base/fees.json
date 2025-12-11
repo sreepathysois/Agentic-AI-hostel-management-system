@@ -1,0 +1,22 @@
+{
+  "hostel_fees": {
+    "single_ac": 85000,
+    "single_non_ac": 65000,
+    "double_ac": 70000,
+    "double_non_ac": 55000,
+    "triple_non_ac": 45000,
+    "attached_bath_ac": 95000
+  },
+  "mess_fees": {
+    "monthly": 3500,
+    "semester": 20000,
+    "daily_guest_charge": 150
+  },
+  "security_deposit": 10000,
+  "notes": [
+    "Fees are billed semester-wise.",
+    "Security deposit is refundable at end of academic year.",
+    "AC rooms include electricity quota, excess usage billed separately."
+  ]
+}
+

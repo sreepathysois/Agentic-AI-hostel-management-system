@@ -1,0 +1,44 @@
+{
+  "hostel_types": [
+    {
+      "type": "Single Room",
+      "description": "A private room for one student.",
+      "features": ["Private room", "Study desk", "Cupboard", "Fan/AC depending on plan"],
+      "bathroom": "Common bathroom",
+      "variants": {
+        "AC": true,
+        "Non-AC": true
+      }
+    },
+    {
+      "type": "Double Sharing",
+      "description": "A room shared between two students.",
+      "features": ["Two beds", "Two desks", "Shared cupboard space"],
+      "bathroom": "Common bathroom",
+      "variants": {
+        "AC": true,
+        "Non-AC": true
+      }
+    },
+    {
+      "type": "Triple Sharing",
+      "description": "Economy option with shared space for three students.",
+      "features": ["Three beds", "Fan", "Shared cupboard"],
+      "bathroom": "Common bathroom",
+      "variants": {
+        "AC": false,
+        "Non-AC": true
+      }
+    },
+    {
+      "type": "Attached Bathroom Deluxe",
+      "description": "Single or double room with attached western bathroom.",
+      "features": ["Attached bathroom", "Geyser", "Premium furnishing"],
+      "variants": {
+        "AC": true,
+        "Non-AC": false
+      }
+    }
+  ]
+}
+
