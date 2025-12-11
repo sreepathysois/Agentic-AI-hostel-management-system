@@ -1,0 +1,4818 @@
+{
+  "AdminUsers_M": {
+    "columns": [
+      "UserID",
+      "Name",
+      "Role",
+      "EmailID",
+      "Status",
+      "CreatedDate",
+      "Datem",
+      "ID",
+      "DefaultLocation",
+      "MultipleRole"
+    ],
+    "fk_count": 0
+  },
+  "aplrollnoupdatetracker": {
+    "columns": [
+      "ID",
+      "HMSOldRollno",
+      "HFASOldrollno",
+      "newrollno",
+      "remarks",
+      "userid",
+      "datem"
+    ],
+    "fk_count": 0
+  },
+  "App_Process_Control": {
+    "columns": [
+      "ID",
+      "AcademicYear",
+      "InstID",
+      "CourseType",
+      "RankFrom",
+      "RankTo",
+      "CreatedDate",
+      "CreatedBy"
+    ],
+    "fk_count": 0
+  },
+  "App_Process_Control_Tracker": {
+    "columns": [
+      "ID",
+      "AcademicYear",
+      "InstID",
+      "CourseType",
+      "RankFrom",
+      "RankTo",
+      "CreatedDate",
+      "CreatedBy",
+      "Action"
+    ],
+    "fk_count": 0
+  },
+  "Appliance_M": {
+    "columns": [
+      "ID",
+      "Name"
+    ],
+    "fk_count": 0
+  },
+  "appliance_MAHE": {
+    "columns": [
+      "StudentID",
+      "Applicance_Code",
+      "FromDate",
+      "ToDate",
+      "Status",
+      "UserID",
+      "Datem",
+      "AcdemicYear",
+      "SeatID",
+      "ApprovedBy",
+      "ApprovedDate",
+      "StudentName",
+      "BlockID",
+      "RoomID",
+      "IsPaid",
+      "totalamount"
+    ],
+    "fk_count": 0
+  },
+  "Appliance_Student_Details": {
+    "columns": [
+      "ID",
+      "StudentID",
+      "Applicance_Code",
+      "FromDate",
+      "ToDate",
+      "Status",
+      "UserID",
+      "Datem",
+      "AcdemicYear",
+      "SeatID",
+      "ApprovedBy",
+      "ApprovedDate",
+      "StudentName",
+      "BlockID",
+      "RoomID",
+      "IsPaid",
+      "totalamount",
+      "Reamrks",
+      "Remarks",
+      "OrderID"
+    ],
+    "fk_count": 0
+  },
+  "Appliance_Student_Details_125134086": {
+    "columns": [
+      "StudentID",
+      "Applicance_Code",
+      "FromDate",
+      "ToDate",
+      "Status",
+      "UserID",
+      "Datem",
+      "AcdemicYear",
+      "SeatID",
+      "ApprovedBy",
+      "ApprovedDate",
+      "StudentName",
+      "BlockID",
+      "RoomID",
+      "IsPaid",
+      "totalamount"
+    ],
+    "fk_count": 0
+  },
+  "Appliance_Student_Details_Tracker": {
+    "columns": [
+      "ID",
+      "StudentID",
+      "Applicance_Code",
+      "seatID",
+      "roomid",
+      "UserID",
+      "Datem",
+      "AcdemicYear",
+      "IsMoved",
+      "IsDiscarded",
+      "CreatedDate",
+      "CreatedBy",
+      "BlockID"
+    ],
+    "fk_count": 0
+  },
+  "appliancerequestold_23_07_2025": {
+    "columns": [
+      "StudentID",
+      "Applicance_Code",
+      "FromDate",
+      "ToDate",
+      "Status",
+      "UserID",
+      "Datem",
+      "AcdemicYear",
+      "SeatID",
+      "ApprovedBy",
+      "ApprovedDate",
+      "StudentName",
+      "BlockID",
+      "RoomID",
+      "IsPaid",
+      "totalamount"
+    ],
+    "fk_count": 0
+  },
+  "Applicance_Loc_Map": {
+    "columns": [
+      "ApplicanceCode",
+      "LocationID",
+      "Amount",
+      "AmountD",
+      "AY",
+      "MaxVoltage",
+      "websitelink"
+    ],
+    "fk_count": 0
+  },
+  "Applicance_Loc_Map_Tracker": {
+    "columns": [
+      "ID",
+      "ApplicanceCode",
+      "LocationID",
+      "Amount",
+      "AY",
+      "CreatedDate",
+      "CreatedBy"
+    ],
+    "fk_count": 0
+  },
+  "ATOM_PaymentType_M": {
+    "columns": [
+      "ID",
+      "Description"
+    ],
+    "fk_count": 0
+  },
+  "ATOM_ResponseStatus_M": {
+    "columns": [
+      "ID",
+      "Response_Msg",
+      "Description"
+    ],
+    "fk_count": 0
+  },
+  "Block_Floor_Cat_Map": {
+    "columns": [
+      "BlockID",
+      "FloorID",
+      "Category",
+      "IsLocked"
+    ],
+    "fk_count": 0
+  },
+  "Block_Inst_Map": {
+    "columns": [
+      "BlockID",
+      "InstID",
+      "IsActive"
+    ],
+    "fk_count": 0
+  },
+  "Block_M": {
+    "columns": [
+      "ID",
+      "Name",
+      "Category",
+      "IsLocked",
+      "TariffFloorwise",
+      "AllocationType",
+      "HasAppliance",
+      "BlockImagePath",
+      "MapBlockCode",
+      "IsActive"
+    ],
+    "fk_count": 0
+  },
+  "block_M_bk": {
+    "columns": [
+      "ID",
+      "Name",
+      "Category",
+      "IsLocked",
+      "TariffFloorwise",
+      "AllocationType",
+      "HasAppliance",
+      "BlockImagePath",
+      "MapBlockCode"
+    ],
+    "fk_count": 0
+  },
+  "Block_Mess_Map": {
+    "columns": [
+      "BlockCode",
+      "Mess_ID",
+      "Mess_Userid"
+    ],
+    "fk_count": 0
+  },
+  "Block1_M": {
+    "columns": [
+      "ID",
+      "Name",
+      "Category",
+      "IsLocked",
+      "TariffFloorwise",
+      "AllocationType",
+      "HasAppliance",
+      "BlockImagePath",
+      "MapBlockCode"
+    ],
+    "fk_count": 0
+  },
+  "BlrOccupancyDate": {
+    "columns": [
+      "BlockName",
+      "RoomName",
+      "SeatName",
+      "AllocationType",
+      "Rollno",
+      "AplNo",
+      "OccupancyDate",
+      "HMSBlock",
+      "HMSRoom",
+      "HMSSeatID"
+    ],
+    "fk_count": 0
+  },
+  "Course_M": {
+    "columns": [
+      "AY",
+      "CourseType",
+      "Batch",
+      "CourseYear",
+      "StartDate",
+      "EndDate",
+      "Name",
+      "CourseID"
+    ],
+    "fk_count": 0
+  },
+  "CourseType_M": {
+    "columns": [
+      "ID",
+      "Name",
+      "IsPG"
+    ],
+    "fk_count": 0
+  },
+  "d1mhmast": {
+    "columns": [
+      "TypeInst",
+      "RollNo",
+      "Name",
+      "BlockCode",
+      "RoomNumber",
+      "SeatID",
+      "DateOCC",
+      "Flag",
+      "NWblk",
+      "NwRoomid",
+      "NWSeatid"
+    ],
+    "fk_count": 0
+  },
+  "d1NAvlKMCMH2Mast": {
+    "columns": [
+      "TypeInst",
+      "RollNo",
+      "Name",
+      "BlockCode",
+      "RoomNumber",
+      "SeatID",
+      "DateOCC",
+      "Flag",
+      "NWblk",
+      "NwRoomid",
+      "NWSeatid"
+    ],
+    "fk_count": 0
+  },
+  "d1occdate": {
+    "columns": [
+      "StudentID",
+      "ActionDate",
+      "Action",
+      "Status",
+      "Mactiondate"
+    ],
+    "fk_count": 0
+  },
+  "d1paymentdtl": {
+    "columns": [
+      "OrderID",
+      "RollNo",
+      "CurrencyType",
+      "HostelAdvance",
+      "UtilityAdvance",
+      "HostelDeposit",
+      "MessAdvance",
+      "Laundary",
+      "Component1",
+      "Component2",
+      "Component3",
+      "Component4",
+      "ApplianceTotal",
+      "TotalAmount",
+      "TransactionID",
+      "ReceiptNo",
+      "MerchantID",
+      "ResponseCode",
+      "Datem",
+      "Timem",
+      "Posted",
+      "ManualUpdate",
+      "PGName",
+      "mode",
+      "PostedDate",
+      "Account",
+      "PostDate",
+      "Name",
+      "Email",
+      "Mobile",
+      "Hash",
+      "BusinessUnit",
+      "InstitutionID",
+      "OprUnit",
+      "purpose",
+      "IsManualgenaratedReciept",
+      "GeneratedBy",
+      "GeneratedDate",
+      "Comments",
+      "ReceiptPostedDate",
+      "DatembeforeManualUpdate",
+      "academicyear",
+      "course",
+      "SeatID",
+      "RoomID",
+      "BlockID",
+      "UserID",
+      "BankReferenceNo",
+      "PostingStatus",
+      "ApplicationNo",
+      "GuestCharges",
+      "Fine",
+      "remarks",
+      "IsShiftPay",
+      "IsAppliancePay",
+      "CFASReceiptNo",
+      "FinanceAmount",
+      "TransactionFilePath",
+      "PG_ResponseID",
+      "ReconStatus",
+      "Manualupdateby",
+      "Manualupdatedate",
+      "StudentType",
+      "merchanttxnid",
+      "studenttypenew",
+      "GQ_DisbursedAmt"
+    ],
+    "fk_count": 0
+  },
+  "d1Seat_Txn_sep03": {
+    "columns": [
+      "ID",
+      "SeatID",
+      "BlockID",
+      "RoomID",
+      "Action",
+      "ActionDate",
+      "Academicyear",
+      "StudentID",
+      "Status",
+      "UserID",
+      "Datem",
+      "Remarks",
+      "IsDeleted"
+    ],
+    "fk_count": 0
+  },
+  "d1sedate": {
+    "columns": [
+      "RollNo",
+      "Name",
+      "SDate",
+      "EDate"
+    ],
+    "fk_count": 0
+  },
+  "d1Test": {
+    "columns": [
+      "RollNo",
+      "Name"
+    ],
+    "fk_count": 0
+  },
+  "DebarredStud": {
+    "columns": [
+      "LocatnID",
+      "StudentID",
+      "AY"
+    ],
+    "fk_count": 0
+  },
+  "DemandDtls": {
+    "columns": [
+      "Locatn_id",
+      "StudentID",
+      "BlockCode",
+      "RoomNo",
+      "RoomType",
+      "DateofOccupancy",
+      "HFFeeInRs",
+      "HFFeeInDollar",
+      "Userid",
+      "Datem",
+      "Posted",
+      "HostelVerify",
+      "FinanceVerify",
+      "HalfDemand",
+      "FiscalYear",
+      "AcadYear",
+      "FinanceUser",
+      "DemandDate",
+      "PostedDate"
+    ],
+    "fk_count": 0
+  },
+  "DemandDtls_223": {
+    "columns": [
+      "Locatn_id",
+      "StudentID",
+      "BlockCode",
+      "RoomNo",
+      "RoomType",
+      "DateofOccupancy",
+      "HFFeeInRs",
+      "HFFeeInDollar",
+      "Userid",
+      "Datem",
+      "Posted",
+      "HostelVerify",
+      "FinanceVerify",
+      "HalfDemand",
+      "FiscalYear",
+      "AcadYear",
+      "FinanceUser"
+    ],
+    "fk_count": 0
+  },
+  "demanddtls_blr": {
+    "columns": [
+      "Locatn_id",
+      "StudentID",
+      "BlockCode",
+      "RoomNo",
+      "RoomType",
+      "DateofOccupancy",
+      "HFFeeInRs",
+      "HFFeeInDollar",
+      "Userid",
+      "Datem",
+      "Posted",
+      "HostelVerify",
+      "FinanceVerify",
+      "HalfDemand",
+      "FiscalYear",
+      "AcadYear",
+      "FinanceUser",
+      "DemandDate"
+    ],
+    "fk_count": 0
+  },
+  "demanddtlsbk0109": {
+    "columns": [
+      "Locatn_id",
+      "StudentID",
+      "BlockCode",
+      "RoomNo",
+      "RoomType",
+      "DateofOccupancy",
+      "HFFeeInRs",
+      "HFFeeInDollar",
+      "Userid",
+      "Datem",
+      "Posted",
+      "HostelVerify",
+      "FinanceVerify",
+      "HalfDemand",
+      "FiscalYear",
+      "AcadYear",
+      "FinanceUser",
+      "DemandDate"
+    ],
+    "fk_count": 0
+  },
+  "DemandDtlsbk201": {
+    "columns": [
+      "Locatn_id",
+      "StudentID",
+      "BlockCode",
+      "RoomNo",
+      "RoomType",
+      "DateofOccupancy",
+      "HFFeeInRs",
+      "HFFeeInDollar",
+      "Userid",
+      "Datem",
+      "Posted",
+      "HostelVerify",
+      "FinanceVerify",
+      "HalfDemand",
+      "FiscalYear",
+      "AcadYear",
+      "FinanceUser"
+    ],
+    "fk_count": 0
+  },
+  "DemandDtlsbk203": {
+    "columns": [
+      "Locatn_id",
+      "StudentID",
+      "BlockCode",
+      "RoomNo",
+      "RoomType",
+      "DateofOccupancy",
+      "HFFeeInRs",
+      "HFFeeInDollar",
+      "Userid",
+      "Datem",
+      "Posted",
+      "HostelVerify",
+      "FinanceVerify",
+      "HalfDemand",
+      "FiscalYear",
+      "AcadYear",
+      "FinanceUser"
+    ],
+    "fk_count": 0
+  },
+  "DemandDtlsbk205": {
+    "columns": [
+      "Locatn_id",
+      "StudentID",
+      "BlockCode",
+      "RoomNo",
+      "RoomType",
+      "DateofOccupancy",
+      "HFFeeInRs",
+      "HFFeeInDollar",
+      "Userid",
+      "Datem",
+      "Posted",
+      "HostelVerify",
+      "FinanceVerify",
+      "HalfDemand",
+      "FiscalYear",
+      "AcadYear",
+      "FinanceUser"
+    ],
+    "fk_count": 0
+  },
+  "DemandDtlsbk206": {
+    "columns": [
+      "Locatn_id",
+      "StudentID",
+      "BlockCode",
+      "RoomNo",
+      "RoomType",
+      "DateofOccupancy",
+      "HFFeeInRs",
+      "HFFeeInDollar",
+      "Userid",
+      "Datem",
+      "Posted",
+      "HostelVerify",
+      "FinanceVerify",
+      "HalfDemand",
+      "FiscalYear",
+      "AcadYear",
+      "FinanceUser"
+    ],
+    "fk_count": 0
+  },
+  "DemandDtlsbk214": {
+    "columns": [
+      "Locatn_id",
+      "StudentID",
+      "BlockCode",
+      "RoomNo",
+      "RoomType",
+      "DateofOccupancy",
+      "HFFeeInRs",
+      "HFFeeInDollar",
+      "Userid",
+      "Datem",
+      "Posted",
+      "HostelVerify",
+      "FinanceVerify",
+      "HalfDemand",
+      "FiscalYear",
+      "AcadYear",
+      "FinanceUser"
+    ],
+    "fk_count": 0
+  },
+  "DemandDtlsbk220": {
+    "columns": [
+      "Locatn_id",
+      "StudentID",
+      "BlockCode",
+      "RoomNo",
+      "RoomType",
+      "DateofOccupancy",
+      "HFFeeInRs",
+      "HFFeeInDollar",
+      "Userid",
+      "Datem",
+      "Posted",
+      "HostelVerify",
+      "FinanceVerify",
+      "HalfDemand",
+      "FiscalYear",
+      "AcadYear",
+      "FinanceUser"
+    ],
+    "fk_count": 0
+  },
+  "DemandDtlsbk222": {
+    "columns": [
+      "Locatn_id",
+      "StudentID",
+      "BlockCode",
+      "RoomNo",
+      "RoomType",
+      "DateofOccupancy",
+      "HFFeeInRs",
+      "HFFeeInDollar",
+      "Userid",
+      "Datem",
+      "Posted",
+      "HostelVerify",
+      "FinanceVerify",
+      "HalfDemand",
+      "FiscalYear",
+      "AcadYear",
+      "FinanceUser"
+    ],
+    "fk_count": 0
+  },
+  "DemandDtlsbk506": {
+    "columns": [
+      "Locatn_id",
+      "StudentID",
+      "BlockCode",
+      "RoomNo",
+      "RoomType",
+      "DateofOccupancy",
+      "HFFeeInRs",
+      "HFFeeInDollar",
+      "Userid",
+      "Datem",
+      "Posted",
+      "HostelVerify",
+      "FinanceVerify",
+      "HalfDemand",
+      "FiscalYear",
+      "AcadYear",
+      "FinanceUser"
+    ],
+    "fk_count": 0
+  },
+  "DemandDtlsbk513": {
+    "columns": [
+      "Locatn_id",
+      "StudentID",
+      "BlockCode",
+      "RoomNo",
+      "RoomType",
+      "DateofOccupancy",
+      "HFFeeInRs",
+      "HFFeeInDollar",
+      "Userid",
+      "Datem",
+      "Posted",
+      "HostelVerify",
+      "FinanceVerify",
+      "HalfDemand",
+      "FiscalYear",
+      "AcadYear",
+      "FinanceUser"
+    ],
+    "fk_count": 0
+  },
+  "DemandDtlsbk518": {
+    "columns": [
+      "Locatn_id",
+      "StudentID",
+      "BlockCode",
+      "RoomNo",
+      "RoomType",
+      "DateofOccupancy",
+      "HFFeeInRs",
+      "HFFeeInDollar",
+      "Userid",
+      "Datem",
+      "Posted",
+      "HostelVerify",
+      "FinanceVerify",
+      "HalfDemand",
+      "FiscalYear",
+      "AcadYear",
+      "FinanceUser"
+    ],
+    "fk_count": 0
+  },
+  "DemandDtlsbk532": {
+    "columns": [
+      "Locatn_id",
+      "StudentID",
+      "BlockCode",
+      "RoomNo",
+      "RoomType",
+      "DateofOccupancy",
+      "HFFeeInRs",
+      "HFFeeInDollar",
+      "Userid",
+      "Datem",
+      "Posted",
+      "HostelVerify",
+      "FinanceVerify",
+      "HalfDemand",
+      "FiscalYear",
+      "AcadYear",
+      "FinanceUser"
+    ],
+    "fk_count": 0
+  },
+  "Disciplinary_details": {
+    "columns": [
+      "ID",
+      "Rollno",
+      "DiscID",
+      "DiscDate",
+      "Remarks",
+      "IsCancel",
+      "IsMoved",
+      "CancelRemarks",
+      "enteredby",
+      "entereddate",
+      "cancelledby",
+      "IsPaid",
+      "Amount",
+      "LocationID",
+      "Status",
+      "ApprovedBy",
+      "ApprovedDate",
+      "IncidentDate",
+      "CurrentBlock",
+      "CurrentRoom",
+      "CurrentSeatID",
+      "Hostelite",
+      "OrderID"
+    ],
+    "fk_count": 0
+  },
+  "Disciplinary_details_07102025": {
+    "columns": [
+      "ID",
+      "Rollno",
+      "DiscID",
+      "DiscDate",
+      "Remarks",
+      "IsCancel",
+      "IsMoved",
+      "CancelRemarks",
+      "enteredby",
+      "entereddate",
+      "cancelledby",
+      "IsPaid",
+      "Amount",
+      "LocationID",
+      "Status",
+      "ApprovedBy",
+      "ApprovedDate",
+      "IncidentDate",
+      "CurrentBlock",
+      "CurrentRoom",
+      "CurrentSeatID",
+      "Hostelite",
+      "OrderID"
+    ],
+    "fk_count": 0
+  },
+  "Disciplinary_details_MAHEbkcup": {
+    "columns": [
+      "ID",
+      "Rollno",
+      "DiscID",
+      "DiscDate",
+      "Remarks",
+      "IsCancel",
+      "IsMoved",
+      "CancelRemarks",
+      "enteredby",
+      "entereddate",
+      "cancelledby",
+      "IsPaid",
+      "Amount",
+      "LocationID",
+      "Status",
+      "ApprovedBy",
+      "ApprovedDate",
+      "IncidentDate",
+      "CurrentBlock",
+      "CurrentRoom",
+      "CurrentSeatID",
+      "Hostelite",
+      "OrderID"
+    ],
+    "fk_count": 0
+  },
+  "Disciplinary_Loc_Map": {
+    "columns": [
+      "LocID",
+      "DiscID",
+      "Amount"
+    ],
+    "fk_count": 0
+  },
+  "Disciplinary_M": {
+    "columns": [
+      "ID",
+      "Name"
+    ],
+    "fk_count": 0
+  },
+  "Disciplinary_Tracker": {
+    "columns": [
+      "ID",
+      "Amount",
+      "ActionDate",
+      "Remarks",
+      "UserID",
+      "Datem",
+      "LocationID",
+      "Status",
+      "Rollno",
+      "DiscID"
+    ],
+    "fk_count": 0
+  },
+  "DisciplinaryAction_M": {
+    "columns": [
+      "Actn_Code",
+      "Actn_Desn"
+    ],
+    "fk_count": 0
+  },
+  "DisciplinaryActionDetails": {
+    "columns": [
+      "Locatn_id",
+      "StudentID",
+      "ActionCd",
+      "ActionDate",
+      "BlockCode",
+      "RoomNo",
+      "Amount",
+      "Userid",
+      "Datem",
+      "Del_flag",
+      "Del_Date"
+    ],
+    "fk_count": 0
+  },
+  "DuePay": {
+    "columns": [
+      "StudentID",
+      "HFee",
+      "UFee",
+      "HDFee",
+      "MFee",
+      "LAFee",
+      "TOTFee",
+      "HBal",
+      "UBal",
+      "HDBal",
+      "MBal",
+      "LABal",
+      "IntBal",
+      "TotBal",
+      "HPay",
+      "UPay",
+      "HDPay",
+      "MPay",
+      "LAPay",
+      "IntPay",
+      "TotPay"
+    ],
+    "fk_count": 0
+  },
+  "DuePay_Loc_Map": {
+    "columns": [
+      "DuePayType",
+      "LocID"
+    ],
+    "fk_count": 0
+  },
+  "DueType_M": {
+    "columns": [
+      "ID",
+      "DueType",
+      "IsActive"
+    ],
+    "fk_count": 0
+  },
+  "EmailQueue": {
+    "columns": [
+      "Id",
+      "Subject",
+      "ToEmail",
+      "FromEmail",
+      "CC",
+      "BCC",
+      "IsSent",
+      "MsgBody",
+      "MailSentDate",
+      "CreatedDate",
+      "SentBy",
+      "Remarks",
+      "Rollno",
+      "SeatID",
+      "ReminderType",
+      "ApplicatioNo",
+      "Name",
+      "Gender",
+      "Contactnumber",
+      "Institution",
+      "course",
+      "Block",
+      "Room"
+    ],
+    "fk_count": 0
+  },
+  "EmployeeID_Due": {
+    "columns": [
+      "EmployeeID"
+    ],
+    "fk_count": 0
+  },
+  "Fee_Comp_Floor_M": {
+    "columns": [
+      "LocationID",
+      "AcademicYear",
+      "BlockID",
+      "FloorID",
+      "RoomTypeID",
+      "HostelFacilities",
+      "UtilityAdvance",
+      "HostelDeposit",
+      "MessAdvance",
+      "Laundary",
+      "Total",
+      "HostelFacilitiesD",
+      "UtilityAdvanceD",
+      "HostelDepositD",
+      "MessAdvanceD",
+      "LaundaryD",
+      "TotalD",
+      "CreatedBy",
+      "CreatedDate"
+    ],
+    "fk_count": 0
+  },
+  "Fee_Comp_M": {
+    "columns": [
+      "LocationID",
+      "AcademicYear",
+      "BlockID",
+      "RoomTypeID",
+      "HostelFacilities",
+      "UtilityAdvance",
+      "HostelDeposit",
+      "MessAdvance",
+      "Laundary",
+      "Total",
+      "HostelFacilitiesD",
+      "UtilityAdvanceD",
+      "HostelDepositD",
+      "MessAdvanceD",
+      "LaundaryD",
+      "TotalD",
+      "CreatedBy",
+      "CreatedDate"
+    ],
+    "fk_count": 0
+  },
+  "FeeReceipt_IDGenerator": {
+    "columns": [
+      "Type",
+      "Seed"
+    ],
+    "fk_count": 0
+  },
+  "Finance_MonthClose_Date": {
+    "columns": [
+      "DemandDate"
+    ],
+    "fk_count": 0
+  },
+  "finecheck": {
+    "columns": [
+      "Rollno",
+      "Narratn"
+    ],
+    "fk_count": 0
+  },
+  "FineDetails": {
+    "columns": [
+      "ID",
+      "LocatnID",
+      "StudentID",
+      "Narratn",
+      "Tran_Date",
+      "FineAmt",
+      "PostedYN",
+      "Userid",
+      "Datem",
+      "IsPaid",
+      "Posteddate",
+      "IsSent",
+      "MailSentDate",
+      "addedtoemailqueue",
+      "addedemailqueuedate",
+      "counter"
+    ],
+    "fk_count": 0
+  },
+  "finedetails_bk_mahe": {
+    "columns": [
+      "ID",
+      "LocatnID",
+      "StudentID",
+      "Narratn",
+      "Tran_Date",
+      "FineAmt",
+      "PostedYN",
+      "Userid",
+      "Datem",
+      "IsPaid",
+      "Posteddate",
+      "IsSent",
+      "MailSentDate",
+      "addedtoemailqueue",
+      "addedemailqueuedate",
+      "counter"
+    ],
+    "fk_count": 0
+  },
+  "finedetails_MAHEaugust": {
+    "columns": [
+      "ID",
+      "LocatnID",
+      "StudentID",
+      "Narratn",
+      "Tran_Date",
+      "FineAmt",
+      "PostedYN",
+      "Userid",
+      "Datem",
+      "IsPaid",
+      "Posteddate",
+      "IsSent",
+      "MailSentDate",
+      "addedtoemailqueue",
+      "addedemailqueuedate",
+      "counter"
+    ],
+    "fk_count": 0
+  },
+  "FineDetails_P_pending": {
+    "columns": [
+      "ID",
+      "LocatnID",
+      "StudentID",
+      "Narratn",
+      "Tran_Date",
+      "FineAmt",
+      "PostedYN",
+      "Userid",
+      "Datem",
+      "IsPaid",
+      "Posteddate",
+      "IsSent",
+      "MailSentDate"
+    ],
+    "fk_count": 0
+  },
+  "FiscalYear_M": {
+    "columns": [
+      "FiscalYear"
+    ],
+    "fk_count": 0
+  },
+  "Floor_M": {
+    "columns": [
+      "ID",
+      "Name"
+    ],
+    "fk_count": 0
+  },
+  "FloorOrder": {
+    "columns": [
+      "BlockId",
+      "RoomType",
+      "FloorId",
+      "ProcOrder"
+    ],
+    "fk_count": 0
+  },
+  "GuestCharges_dtls": {
+    "columns": [
+      "ID",
+      "GuestType",
+      "Fromdate",
+      "ToDate",
+      "NumofDays",
+      "GuestName",
+      "GuestID",
+      "GMobNo",
+      "GEmailID",
+      "GAddress",
+      "G_loginEnabled",
+      "BlockID",
+      "RoomID",
+      "RoomType",
+      "PerDaycharge",
+      "Roomcharge",
+      "IGST",
+      "SGST",
+      "CGST",
+      "TotalAmount",
+      "IsPaid",
+      "Remarks",
+      "Status",
+      "Occupied",
+      "Occupieddate",
+      "Occupiedtime",
+      "VacateDate",
+      "VacateTime",
+      "Vacate_CanRemaks",
+      "OTP",
+      "OTPGenTime",
+      "OTPCount",
+      "OTPLocked",
+      "OTPLockedTime",
+      "seatid",
+      "OrderID",
+      "Canceldate",
+      "Canceltime",
+      "cancelremarks",
+      "CreatedBy",
+      "CreatedDate",
+      "UpdatedBy",
+      "UpdatedDate"
+    ],
+    "fk_count": 0
+  },
+  "GuestCharges_dtls_tracker": {
+    "columns": [
+      "ID",
+      "GuestID",
+      "Status",
+      "ActionDate",
+      "ActionTime",
+      "ActionRemarks",
+      "BlockID",
+      "RoomID",
+      "SeatID",
+      "UpdatedBy",
+      "UpdatedDate"
+    ],
+    "fk_count": 0
+  },
+  "GuestType_M": {
+    "columns": [
+      "ID",
+      "Description",
+      "Active"
+    ],
+    "fk_count": 0
+  },
+  "HDFC_ResponseStatus_M": {
+    "columns": [
+      "ID",
+      "Response_Msg",
+      "Description"
+    ],
+    "fk_count": 0
+  },
+  "HMSOccupy": {
+    "columns": [
+      "BlockName",
+      "Room",
+      "Seat",
+      "StudentID",
+      "OccupyDate",
+      "HMSBlock",
+      "HMSRoom",
+      "HMSSeat",
+      "aplno"
+    ],
+    "fk_count": 0
+  },
+  "HRAMasterdata": {
+    "columns": [
+      "BlockCode",
+      "Roomnumber",
+      "SeatID",
+      "Rollno",
+      "Name",
+      "HMSblock",
+      "HMSRoom",
+      "HMSSeat",
+      "HMSSeatid"
+    ],
+    "fk_count": 0
+  },
+  "HRAMasterdataNew": {
+    "columns": [
+      "BlockCode",
+      "Roomnumber",
+      "SeatID",
+      "Rollno",
+      "Name",
+      "HMSblock",
+      "HMSRoom",
+      "HMSSeat",
+      "HMSSeatid"
+    ],
+    "fk_count": 0
+  },
+  "Id_Gen_OnlinePayment": {
+    "columns": [
+      "Type",
+      "Seed"
+    ],
+    "fk_count": 0
+  },
+  "Id_Gen_Receipt": {
+    "columns": [
+      "LocationID",
+      "StudentType",
+      "Prefix",
+      "Seed",
+      "PG"
+    ],
+    "fk_count": 0
+  },
+  "Inmate_Ledger": {
+    "columns": [
+      "AcademicYear",
+      "StudentID",
+      "Status",
+      "OccupancyDate",
+      "VacancyDate",
+      "CreatedBy",
+      "CreatedDate",
+      "Alloteddate",
+      "SeatID",
+      "AplNo",
+      "StudentName",
+      "RoomID",
+      "BlockID",
+      "Academic_StartDate",
+      "Academic_EndEndDate",
+      "ExtendedDate",
+      "AllotmentOrderPath"
+    ],
+    "fk_count": 0
+  },
+  "Inmate_Ledger_bk_30072025allotedseniors": {
+    "columns": [
+      "AcademicYear",
+      "StudentID",
+      "Status",
+      "OccupancyDate",
+      "VacancyDate",
+      "CreatedBy",
+      "CreatedDate",
+      "Alloteddate",
+      "SeatID",
+      "AplNo",
+      "StudentName",
+      "RoomID",
+      "BlockID",
+      "Academic_StartDate",
+      "Academic_EndEndDate",
+      "ExtendedDate",
+      "AllotmentOrderPath"
+    ],
+    "fk_count": 0
+  },
+  "Inmate_Ledger_blr_beforeOccupany05082025": {
+    "columns": [
+      "AcademicYear",
+      "StudentID",
+      "Status",
+      "OccupancyDate",
+      "VacancyDate",
+      "CreatedBy",
+      "CreatedDate",
+      "Alloteddate",
+      "SeatID",
+      "AplNo",
+      "StudentName",
+      "RoomID",
+      "BlockID",
+      "Academic_StartDate",
+      "Academic_EndEndDate",
+      "ExtendedDate",
+      "AllotmentOrderPath"
+    ],
+    "fk_count": 0
+  },
+  "Inmate_Ledger_shiftmovement2508": {
+    "columns": [
+      "AcademicYear",
+      "StudentID",
+      "Status",
+      "OccupancyDate",
+      "VacancyDate",
+      "CreatedBy",
+      "CreatedDate",
+      "Alloteddate",
+      "SeatID",
+      "AplNo",
+      "StudentName",
+      "RoomID",
+      "BlockID",
+      "Academic_StartDate",
+      "Academic_EndEndDate",
+      "ExtendedDate",
+      "AllotmentOrderPath"
+    ],
+    "fk_count": 0
+  },
+  "Inst_Course_Map": {
+    "columns": [
+      "InstID",
+      "CourseType"
+    ],
+    "fk_count": 0
+  },
+  "Institution_M": {
+    "columns": [
+      "ID",
+      "Name",
+      "LocationID"
+    ],
+    "fk_count": 0
+  },
+  "kmcmh2ldgr": {
+    "columns": [
+      "TypeInst",
+      "FromBlockCode",
+      "FromRoomNumber",
+      "FromTypeCode",
+      "ToBlockCode",
+      "ToRoomNumber",
+      "ToTypeCode",
+      "RollNo",
+      "Name",
+      "TranSerial",
+      "TransDate",
+      "Flag",
+      "Narration",
+      "NWblk",
+      "NWRoomid",
+      "NWSeatid",
+      "NWfrblk",
+      "NwfrRoomid"
+    ],
+    "fk_count": 0
+  },
+  "kmcmh2mast": {
+    "columns": [
+      "TypeInst",
+      "RollNo",
+      "Name",
+      "BlockCode",
+      "RoomNumber",
+      "SeatID",
+      "DateOCC",
+      "Flag",
+      "NWblk",
+      "NwRoomid",
+      "NWSeatid"
+    ],
+    "fk_count": 0
+  },
+  "Location_M": {
+    "columns": [
+      "ID",
+      "Name",
+      "HasAppliance",
+      "Atom_MerchantID",
+      "AtomUserID",
+      "AtomPassword",
+      "AtomProductID",
+      "Atomphrase_Req",
+      "Atomsalt_Req",
+      "Atomphrase_Resp",
+      "Atomsalt_Resp",
+      "Atom_ResponseURL",
+      "IsShiftEnabled",
+      "IsVacateEnabled",
+      "HasApp_Voltage",
+      "ApplyTC",
+      "AllotOrder_TC",
+      "Appliance_TC",
+      "laundryfee",
+      "DisplaySeatNo",
+      "IFSCCode",
+      "BenificiaryName",
+      "RTGSAccountNo",
+      "RTGSIFSCCode",
+      "RTGSBenificiaryName",
+      "ShiftEnabled_Occupancy",
+      "ShiftEnabled_ProvAllot",
+      "IsAdvPay_Enabled",
+      "HDFC_APIKey",
+      "HDFC_MerchantID",
+      "HDFC_ClientID",
+      "HDFC_ResponseURL",
+      "HDFCEnabled",
+      "FR_MessAdvEnabled",
+      "SR_MessAdvEnabled",
+      "GQ_APIKey",
+      "GQ_SecretKey",
+      "GQ_ClientKey",
+      "GQ_Slug",
+      "Appliance_AutoApprove",
+      "Mutualreqenableroommateconsent",
+      "MessChangeEnabled",
+      "MutualShiftEnabled",
+      "FR_Mess_PGEnabled",
+      "Mutual_SubBeforeConsent",
+      "VacateChecklistEnabled",
+      "VacateLaundaryApp",
+      "VacateDueCertificate_Enabled"
+    ],
+    "fk_count": 0
+  },
+  "MAHEVacateList": {
+    "columns": [
+      "Rollno"
+    ],
+    "fk_count": 0
+  },
+  "MainMenu": {
+    "columns": [
+      "MenuId",
+      "MenuTitle",
+      "Icon",
+      "SortOrder",
+      "MenuURL",
+      "divid"
+    ],
+    "fk_count": 0
+  },
+  "Mess_M": {
+    "columns": [
+      "Mess_ID",
+      "MessName"
+    ],
+    "fk_count": 0
+  },
+  "Messchangereq_Details": {
+    "columns": [
+      "Id",
+      "Studentid",
+      "AcademicYear",
+      "Seatid",
+      "Roomid",
+      "Blockid",
+      "Old_Messid",
+      "Old_MessLocEntryNo",
+      "New_Messid",
+      "New_MessLocEntryNo",
+      "Student_Remark",
+      "Status",
+      "DateofRequest",
+      "Old_Messuserid",
+      "Old_Messuser_Remark",
+      "Old_MessUser_UpdatedDate",
+      "New_Messuserid",
+      "New_Messuser_Remark",
+      "New_MessUser_UpdatedDate",
+      "Warden_Userid",
+      "Warden_Remark",
+      "Warden_UpdatedDate",
+      "MessChangeDate"
+    ],
+    "fk_count": 0
+  },
+  "Messlocation_M": {
+    "columns": [
+      "Messven_Id",
+      "Entryno",
+      "Locationdetails",
+      "LocDescp",
+      "AvlForNewMessSel"
+    ],
+    "fk_count": 0
+  },
+  "MessVendor_M": {
+    "columns": [
+      "Id",
+      "Name",
+      "Locid",
+      "Userid"
+    ],
+    "fk_count": 0
+  },
+  "MessYear": {
+    "columns": [
+      "ID",
+      "Year",
+      "Month",
+      "Description",
+      "MonthID"
+    ],
+    "fk_count": 0
+  },
+  "Mutual_Req_ApprovalList": {
+    "columns": [
+      "ID",
+      "ReqID",
+      "StudentID",
+      "IsConfirm",
+      "Remarks",
+      "UserID",
+      "Datem"
+    ],
+    "fk_count": 0
+  },
+  "Mutual_Shift_Req_dtls": {
+    "columns": [
+      "ID",
+      "ReqStudentID",
+      "ReqStBlockID",
+      "ReqStuRoomType",
+      "ReqStSeatID",
+      "NewStudentID",
+      "NewStBlockID",
+      "NewStRoomType",
+      "NewStSeatID",
+      "Status",
+      "UserID",
+      "Datem",
+      "StudentType",
+      "Remarks",
+      "ShiftDate"
+    ],
+    "fk_count": 0
+  },
+  "Mutual_Shift_Req_dtls_bk2608": {
+    "columns": [
+      "ID",
+      "ReqStudentID",
+      "ReqStBlockID",
+      "ReqStuRoomType",
+      "ReqStSeatID",
+      "NewStudentID",
+      "NewStBlockID",
+      "NewStRoomType",
+      "NewStSeatID",
+      "Status",
+      "UserID",
+      "Datem",
+      "StudentType",
+      "Remarks",
+      "ShiftDate"
+    ],
+    "fk_count": 0
+  },
+  "Occupancy_tracker": {
+    "columns": [
+      "ID",
+      "SeatID",
+      "RoomID",
+      "Academicyear",
+      "StudentID",
+      "Status",
+      "Remarks",
+      "UserID",
+      "datem",
+      "BlockID"
+    ],
+    "fk_count": 0
+  },
+  "OccupancyEntry": {
+    "columns": [
+      "AcademicYear",
+      "SeatID",
+      "RoomID",
+      "StudentID",
+      "Status",
+      "Remarks",
+      "UserID",
+      "datem",
+      "OccupiedDate",
+      "BlockID"
+    ],
+    "fk_count": 0
+  },
+  "Occupancyentrybk_02082025": {
+    "columns": [
+      "AcademicYear",
+      "SeatID",
+      "RoomID",
+      "StudentID",
+      "Status",
+      "Remarks",
+      "UserID",
+      "datem",
+      "OccupiedDate",
+      "BlockID"
+    ],
+    "fk_count": 0
+  },
+  "OccupancyMM": {
+    "columns": [
+      "Locatn_id",
+      "YrMon",
+      "StudentID",
+      "BlockCode",
+      "RoomNo",
+      "RoomType",
+      "TranDate",
+      "Action",
+      "Fr_Date",
+      "To_Date",
+      "Days",
+      "No_Weeks",
+      "WeeksM4",
+      "Final_Weeks",
+      "ModFlag",
+      "Userid",
+      "Datem",
+      "PresPrev"
+    ],
+    "fk_count": 0
+  },
+  "OccupancyMMAppliance": {
+    "columns": [
+      "Locatn_id",
+      "YrMon",
+      "StudentID",
+      "Amount"
+    ],
+    "fk_count": 0
+  },
+  "OccupancyMMMTMC18092025": {
+    "columns": [
+      "Locatn_id",
+      "YrMon",
+      "StudentID",
+      "BlockCode",
+      "RoomNo",
+      "RoomType",
+      "TranDate",
+      "Action",
+      "Fr_Date",
+      "To_Date",
+      "Days",
+      "No_Weeks",
+      "WeeksM4",
+      "Final_Weeks",
+      "ModFlag",
+      "Userid",
+      "Datem",
+      "PresPrev"
+    ],
+    "fk_count": 0
+  },
+  "OccupancyUpdateTracker": {
+    "columns": [
+      "TrackerID",
+      "StudentID",
+      "OldActionDate",
+      "NewActionDate",
+      "Remarks",
+      "UpdatedBy",
+      "UpdatedDate",
+      "TablesUpdated"
+    ],
+    "fk_count": 0
+  },
+  "Offline_Pay_Details": {
+    "columns": [
+      "Rollno",
+      "FromDate",
+      "Todate"
+    ],
+    "fk_count": 0
+  },
+  "Offline_Pay_Dtls_Tracker": {
+    "columns": [
+      "ID",
+      "Rollno",
+      "Remarks",
+      "UserID",
+      "Datem",
+      "Action"
+    ],
+    "fk_count": 0
+  },
+  "Offline_Pay_Remarks": {
+    "columns": [
+      "ID",
+      "Remarks"
+    ],
+    "fk_count": 0
+  },
+  "Online_Process_Control_remove": {
+    "columns": [
+      "InstID",
+      "CourseType",
+      "IsOpen"
+    ],
+    "fk_count": 0
+  },
+  "OnlinePayment_ApplianceDetails": {
+    "columns": [
+      "OrderID",
+      "RollNo",
+      "ApplianceID",
+      "Amount"
+    ],
+    "fk_count": 0
+  },
+  "OnlinePaymentDtls": {
+    "columns": [
+      "OrderID",
+      "RollNo",
+      "CurrencyType",
+      "HostelAdvance",
+      "UtilityAdvance",
+      "HostelDeposit",
+      "MessAdvance",
+      "Laundary",
+      "Component1",
+      "Component2",
+      "Component3",
+      "Component4",
+      "ApplianceTotal",
+      "TotalAmount",
+      "TransactionID",
+      "ReceiptNo",
+      "MerchantID",
+      "ResponseCode",
+      "Datem",
+      "Timem",
+      "Posted",
+      "ManualUpdate",
+      "PGName",
+      "mode",
+      "PostedDate",
+      "Account",
+      "PostDate",
+      "Name",
+      "Email",
+      "Mobile",
+      "Hash",
+      "BusinessUnit",
+      "InstitutionID",
+      "OprUnit",
+      "purpose",
+      "IsManualgenaratedReciept",
+      "GeneratedBy",
+      "GeneratedDate",
+      "Comments",
+      "ReceiptPostedDate",
+      "DatembeforeManualUpdate",
+      "academicyear",
+      "course",
+      "SeatID",
+      "RoomID",
+      "BlockID",
+      "UserID",
+      "BankReferenceNo",
+      "PostingStatus",
+      "ApplicationNo",
+      "GuestCharges",
+      "Fine",
+      "remarks",
+      "IsShiftPay",
+      "IsAppliancePay",
+      "CFASReceiptNo",
+      "FinanceAmount",
+      "TransactionFilePath",
+      "PG_ResponseID",
+      "ReconStatus",
+      "Manualupdateby",
+      "Manualupdatedate",
+      "StudentType",
+      "merchanttxnid",
+      "studenttypenew",
+      "GQ_DisbursedAmt",
+      "IsFinePay",
+      "DuePayType"
+    ],
+    "fk_count": 0
+  },
+  "OnlinePaymentDtls_01072025_V2": {
+    "columns": [
+      "OrderID",
+      "RollNo",
+      "CurrencyType",
+      "HostelAdvance",
+      "UtilityAdvance",
+      "HostelDeposit",
+      "MessAdvance",
+      "Laundary",
+      "Component1",
+      "Component2",
+      "Component3",
+      "Component4",
+      "ApplianceTotal",
+      "TotalAmount",
+      "TransactionID",
+      "ReceiptNo",
+      "MerchantID",
+      "ResponseCode",
+      "Datem",
+      "Timem",
+      "Posted",
+      "ManualUpdate",
+      "PGName",
+      "mode",
+      "PostedDate",
+      "Account",
+      "PostDate",
+      "Name",
+      "Email",
+      "Mobile",
+      "Hash",
+      "BusinessUnit",
+      "InstitutionID",
+      "OprUnit",
+      "purpose",
+      "IsManualgenaratedReciept",
+      "GeneratedBy",
+      "GeneratedDate",
+      "Comments",
+      "ReceiptPostedDate",
+      "DatembeforeManualUpdate",
+      "academicyear",
+      "course",
+      "SeatID",
+      "RoomID",
+      "BlockID",
+      "UserID",
+      "BankReferenceNo",
+      "PostingStatus",
+      "ApplicationNo",
+      "GuestCharges",
+      "Fine",
+      "remarks",
+      "IsShiftPay",
+      "IsAppliancePay",
+      "CFASReceiptNo",
+      "FinanceAmount",
+      "TransactionFilePath",
+      "PG_ResponseID",
+      "ReconStatus",
+      "Manualupdateby",
+      "Manualupdatedate",
+      "StudentType",
+      "merchanttxnid",
+      "studenttypenew"
+    ],
+    "fk_count": 0
+  },
+  "OnlinePaymentDtls_01072025_V4": {
+    "columns": [
+      "OrderID",
+      "RollNo",
+      "CurrencyType",
+      "HostelAdvance",
+      "UtilityAdvance",
+      "HostelDeposit",
+      "MessAdvance",
+      "Laundary",
+      "Component1",
+      "Component2",
+      "Component3",
+      "Component4",
+      "ApplianceTotal",
+      "TotalAmount",
+      "TransactionID",
+      "ReceiptNo",
+      "MerchantID",
+      "ResponseCode",
+      "Datem",
+      "Timem",
+      "Posted",
+      "ManualUpdate",
+      "PGName",
+      "mode",
+      "PostedDate",
+      "Account",
+      "PostDate",
+      "Name",
+      "Email",
+      "Mobile",
+      "Hash",
+      "BusinessUnit",
+      "InstitutionID",
+      "OprUnit",
+      "purpose",
+      "IsManualgenaratedReciept",
+      "GeneratedBy",
+      "GeneratedDate",
+      "Comments",
+      "ReceiptPostedDate",
+      "DatembeforeManualUpdate",
+      "academicyear",
+      "course",
+      "SeatID",
+      "RoomID",
+      "BlockID",
+      "UserID",
+      "BankReferenceNo",
+      "PostingStatus",
+      "ApplicationNo",
+      "GuestCharges",
+      "Fine",
+      "remarks",
+      "IsShiftPay",
+      "IsAppliancePay",
+      "CFASReceiptNo",
+      "FinanceAmount",
+      "TransactionFilePath",
+      "PG_ResponseID",
+      "ReconStatus",
+      "Manualupdateby",
+      "Manualupdatedate",
+      "StudentType",
+      "merchanttxnid",
+      "studenttypenew"
+    ],
+    "fk_count": 0
+  },
+  "OnlinePaymentDtls_backup": {
+    "columns": [
+      "OrderID",
+      "RollNo",
+      "CurrencyType",
+      "HostelAdvance",
+      "UtilityAdvance",
+      "HostelDeposit",
+      "MessAdvance",
+      "Laundary",
+      "Component1",
+      "Component2",
+      "Component3",
+      "Component4",
+      "ApplianceTotal",
+      "TotalAmount",
+      "TransactionID",
+      "ReceiptNo",
+      "MerchantID",
+      "ResponseCode",
+      "Datem",
+      "Timem",
+      "Posted",
+      "ManualUpdate",
+      "PGName",
+      "mode",
+      "PostedDate",
+      "Account",
+      "PostDate",
+      "Name",
+      "Email",
+      "Mobile",
+      "Hash",
+      "BusinessUnit",
+      "InstitutionID",
+      "OprUnit",
+      "purpose",
+      "IsManualgenaratedReciept",
+      "GeneratedBy",
+      "GeneratedDate",
+      "Comments",
+      "ReceiptPostedDate",
+      "DatembeforeManualUpdate",
+      "academicyear",
+      "course",
+      "SeatID",
+      "RoomID",
+      "BlockID",
+      "UserID",
+      "BankReferenceNo",
+      "PostingStatus",
+      "ApplicationNo",
+      "GuestCharges",
+      "Fine",
+      "remarks",
+      "IsShiftPay",
+      "IsAppliancePay",
+      "CFASReceiptNo",
+      "FinanceAmount",
+      "TransactionFilePath",
+      "PG_ResponseID",
+      "ReconStatus",
+      "Manualupdateby",
+      "Manualupdatedate",
+      "StudentType"
+    ],
+    "fk_count": 0
+  },
+  "OnlinePaymentDtls_backup03072025": {
+    "columns": [
+      "OrderID",
+      "RollNo",
+      "CurrencyType",
+      "HostelAdvance",
+      "UtilityAdvance",
+      "HostelDeposit",
+      "MessAdvance",
+      "Laundary",
+      "Component1",
+      "Component2",
+      "Component3",
+      "Component4",
+      "ApplianceTotal",
+      "TotalAmount",
+      "TransactionID",
+      "ReceiptNo",
+      "MerchantID",
+      "ResponseCode",
+      "Datem",
+      "Timem",
+      "Posted",
+      "ManualUpdate",
+      "PGName",
+      "mode",
+      "PostedDate",
+      "Account",
+      "PostDate",
+      "Name",
+      "Email",
+      "Mobile",
+      "Hash",
+      "BusinessUnit",
+      "InstitutionID",
+      "OprUnit",
+      "purpose",
+      "IsManualgenaratedReciept",
+      "GeneratedBy",
+      "GeneratedDate",
+      "Comments",
+      "ReceiptPostedDate",
+      "DatembeforeManualUpdate",
+      "academicyear",
+      "course",
+      "SeatID",
+      "RoomID",
+      "BlockID",
+      "UserID",
+      "BankReferenceNo",
+      "PostingStatus",
+      "ApplicationNo",
+      "GuestCharges",
+      "Fine",
+      "remarks",
+      "IsShiftPay",
+      "IsAppliancePay",
+      "CFASReceiptNo",
+      "FinanceAmount",
+      "TransactionFilePath",
+      "PG_ResponseID",
+      "ReconStatus",
+      "Manualupdateby",
+      "Manualupdatedate",
+      "StudentType",
+      "merchanttxnid",
+      "studenttypenew"
+    ],
+    "fk_count": 0
+  },
+  "OnlinePaymentDtls_backup09072025": {
+    "columns": [
+      "OrderID",
+      "RollNo",
+      "CurrencyType",
+      "HostelAdvance",
+      "UtilityAdvance",
+      "HostelDeposit",
+      "MessAdvance",
+      "Laundary",
+      "Component1",
+      "Component2",
+      "Component3",
+      "Component4",
+      "ApplianceTotal",
+      "TotalAmount",
+      "TransactionID",
+      "ReceiptNo",
+      "MerchantID",
+      "ResponseCode",
+      "Datem",
+      "Timem",
+      "Posted",
+      "ManualUpdate",
+      "PGName",
+      "mode",
+      "PostedDate",
+      "Account",
+      "PostDate",
+      "Name",
+      "Email",
+      "Mobile",
+      "Hash",
+      "BusinessUnit",
+      "InstitutionID",
+      "OprUnit",
+      "purpose",
+      "IsManualgenaratedReciept",
+      "GeneratedBy",
+      "GeneratedDate",
+      "Comments",
+      "ReceiptPostedDate",
+      "DatembeforeManualUpdate",
+      "academicyear",
+      "course",
+      "SeatID",
+      "RoomID",
+      "BlockID",
+      "UserID",
+      "BankReferenceNo",
+      "PostingStatus",
+      "ApplicationNo",
+      "GuestCharges",
+      "Fine",
+      "remarks",
+      "IsShiftPay",
+      "IsAppliancePay",
+      "CFASReceiptNo",
+      "FinanceAmount",
+      "TransactionFilePath",
+      "PG_ResponseID",
+      "ReconStatus",
+      "Manualupdateby",
+      "Manualupdatedate",
+      "StudentType",
+      "merchanttxnid",
+      "studenttypenew"
+    ],
+    "fk_count": 0
+  },
+  "OnlinePaymentDtls_copy": {
+    "columns": [
+      "OrderID",
+      "RollNo",
+      "CurrencyType",
+      "HostelAdvance",
+      "UtilityAdvance",
+      "HostelDeposit",
+      "MessAdvance",
+      "Laundary",
+      "Component1",
+      "Component2",
+      "Component3",
+      "Component4",
+      "ApplianceTotal",
+      "TotalAmount",
+      "TransactionID",
+      "ReceiptNo",
+      "MerchantID",
+      "ResponseCode",
+      "Datem",
+      "Timem",
+      "Posted",
+      "ManualUpdate",
+      "PGName",
+      "mode",
+      "PostedDate",
+      "Account",
+      "PostDate",
+      "Name",
+      "Email",
+      "Mobile",
+      "Hash",
+      "BusinessUnit",
+      "InstitutionID",
+      "OprUnit",
+      "purpose",
+      "IsManualgenaratedReciept",
+      "GeneratedBy",
+      "GeneratedDate",
+      "Comments",
+      "ReceiptPostedDate",
+      "DatembeforeManualUpdate",
+      "academicyear",
+      "course",
+      "SeatID",
+      "RoomID",
+      "BlockID",
+      "UserID",
+      "BankReferenceNo",
+      "PostingStatus",
+      "ApplicationNo",
+      "GuestCharges",
+      "Fine",
+      "remarks",
+      "IsShiftPay",
+      "IsAppliancePay",
+      "CFASReceiptNo",
+      "FinanceAmount",
+      "TransactionFilePath",
+      "PG_ResponseID",
+      "ReconStatus",
+      "Manualupdateby",
+      "Manualupdatedate",
+      "StudentType"
+    ],
+    "fk_count": 0
+  },
+  "OnlinePaymentDtls_Dtls_backup_11072025": {
+    "columns": [
+      "OrderID",
+      "RollNo",
+      "CurrencyType",
+      "HostelAdvance",
+      "UtilityAdvance",
+      "HostelDeposit",
+      "MessAdvance",
+      "Laundary",
+      "Component1",
+      "Component2",
+      "Component3",
+      "Component4",
+      "ApplianceTotal",
+      "TotalAmount",
+      "TransactionID",
+      "ReceiptNo",
+      "MerchantID",
+      "ResponseCode",
+      "Datem",
+      "Timem",
+      "Posted",
+      "ManualUpdate",
+      "PGName",
+      "mode",
+      "PostedDate",
+      "Account",
+      "PostDate",
+      "Name",
+      "Email",
+      "Mobile",
+      "Hash",
+      "BusinessUnit",
+      "InstitutionID",
+      "OprUnit",
+      "purpose",
+      "IsManualgenaratedReciept",
+      "GeneratedBy",
+      "GeneratedDate",
+      "Comments",
+      "ReceiptPostedDate",
+      "DatembeforeManualUpdate",
+      "academicyear",
+      "course",
+      "SeatID",
+      "RoomID",
+      "BlockID",
+      "UserID",
+      "BankReferenceNo",
+      "PostingStatus",
+      "ApplicationNo",
+      "GuestCharges",
+      "Fine",
+      "remarks",
+      "IsShiftPay",
+      "IsAppliancePay",
+      "CFASReceiptNo",
+      "FinanceAmount",
+      "TransactionFilePath",
+      "PG_ResponseID",
+      "ReconStatus",
+      "Manualupdateby",
+      "Manualupdatedate",
+      "StudentType",
+      "merchanttxnid",
+      "studenttypenew",
+      "GQ_DisbursedAmt"
+    ],
+    "fk_count": 0
+  },
+  "OnlinePaymentDtls_requerymitafter": {
+    "columns": [
+      "OrderID",
+      "RollNo",
+      "CurrencyType",
+      "HostelAdvance",
+      "UtilityAdvance",
+      "HostelDeposit",
+      "MessAdvance",
+      "Laundary",
+      "Component1",
+      "Component2",
+      "Component3",
+      "Component4",
+      "ApplianceTotal",
+      "TotalAmount",
+      "TransactionID",
+      "ReceiptNo",
+      "MerchantID",
+      "ResponseCode",
+      "Datem",
+      "Timem",
+      "Posted",
+      "ManualUpdate",
+      "PGName",
+      "mode",
+      "PostedDate",
+      "Account",
+      "PostDate",
+      "Name",
+      "Email",
+      "Mobile",
+      "Hash",
+      "BusinessUnit",
+      "InstitutionID",
+      "OprUnit",
+      "purpose",
+      "IsManualgenaratedReciept",
+      "GeneratedBy",
+      "GeneratedDate",
+      "Comments",
+      "ReceiptPostedDate",
+      "DatembeforeManualUpdate",
+      "academicyear",
+      "course",
+      "SeatID",
+      "RoomID",
+      "BlockID",
+      "UserID",
+      "BankReferenceNo",
+      "PostingStatus",
+      "ApplicationNo",
+      "GuestCharges",
+      "Fine",
+      "remarks",
+      "IsShiftPay",
+      "IsAppliancePay",
+      "CFASReceiptNo",
+      "FinanceAmount",
+      "TransactionFilePath",
+      "PG_ResponseID",
+      "ReconStatus",
+      "Manualupdateby",
+      "Manualupdatedate",
+      "StudentType",
+      "merchanttxnid",
+      "studenttypenew"
+    ],
+    "fk_count": 0
+  },
+  "onlinetable_01072025": {
+    "columns": [
+      "OrderID",
+      "RollNo",
+      "CurrencyType",
+      "HostelAdvance",
+      "UtilityAdvance",
+      "HostelDeposit",
+      "MessAdvance",
+      "Laundary",
+      "Component1",
+      "Component2",
+      "Component3",
+      "Component4",
+      "ApplianceTotal",
+      "TotalAmount",
+      "TransactionID",
+      "ReceiptNo",
+      "MerchantID",
+      "ResponseCode",
+      "Datem",
+      "Timem",
+      "Posted",
+      "ManualUpdate",
+      "PGName",
+      "mode",
+      "PostedDate",
+      "Account",
+      "PostDate",
+      "Name",
+      "Email",
+      "Mobile",
+      "Hash",
+      "BusinessUnit",
+      "InstitutionID",
+      "OprUnit",
+      "purpose",
+      "IsManualgenaratedReciept",
+      "GeneratedBy",
+      "GeneratedDate",
+      "Comments",
+      "ReceiptPostedDate",
+      "DatembeforeManualUpdate",
+      "academicyear",
+      "course",
+      "SeatID",
+      "RoomID",
+      "BlockID",
+      "UserID",
+      "BankReferenceNo",
+      "PostingStatus",
+      "ApplicationNo",
+      "GuestCharges",
+      "Fine",
+      "remarks",
+      "IsShiftPay",
+      "IsAppliancePay",
+      "CFASReceiptNo",
+      "FinanceAmount",
+      "TransactionFilePath",
+      "PG_ResponseID",
+      "ReconStatus",
+      "Manualupdateby",
+      "Manualupdatedate",
+      "StudentType",
+      "merchanttxnid",
+      "studenttypenew"
+    ],
+    "fk_count": 0
+  },
+  "OptProcStatus": {
+    "columns": [
+      "Remarks",
+      "ProcDate"
+    ],
+    "fk_count": 0
+  },
+  "PayDetails": {
+    "columns": [
+      "OrderID",
+      "Amount"
+    ],
+    "fk_count": 0
+  },
+  "PaymentMode_M": {
+    "columns": [
+      "ID",
+      "Mode",
+      "SortOrder",
+      "CurType"
+    ],
+    "fk_count": 0
+  },
+  "PayOrder_IDGen": {
+    "columns": [
+      "ID",
+      "Seed",
+      "PayDescription"
+    ],
+    "fk_count": 0
+  },
+  "Provisional_Allocation_Dtls": {
+    "columns": [
+      "ID",
+      "SeatID",
+      "Academicyear",
+      "StudentID",
+      "OptionID",
+      "RSDL",
+      "HostelFacilities",
+      "UtilityAdvance",
+      "HostelDeposit",
+      "MessAdvance",
+      "AdvancePaid",
+      "AdvanceAmt",
+      "Status",
+      "StudentName",
+      "RoomID",
+      "BlockID",
+      "IsDeleted",
+      "OrderID",
+      "Academic_StartDate",
+      "Academic_EndEndDate",
+      "GenerateAllot",
+      "AllotmentOrderPath",
+      "userid",
+      "datem",
+      "ActionDate",
+      "Comment",
+      "SeatName",
+      "Occupancyremarks"
+    ],
+    "fk_count": 0
+  },
+  "Provisional_Allocation_Dtls_01072025_V2": {
+    "columns": [
+      "ID",
+      "SeatID",
+      "Academicyear",
+      "StudentID",
+      "OptionID",
+      "RSDL",
+      "HostelFacilities",
+      "UtilityAdvance",
+      "HostelDeposit",
+      "MessAdvance",
+      "AdvancePaid",
+      "AdvanceAmt",
+      "Status",
+      "StudentName",
+      "RoomID",
+      "BlockID",
+      "IsDeleted",
+      "OrderID",
+      "Academic_StartDate",
+      "Academic_EndEndDate",
+      "GenerateAllot",
+      "AllotmentOrderPath",
+      "userid",
+      "datem",
+      "ActionDate",
+      "Comment",
+      "SeatName"
+    ],
+    "fk_count": 0
+  },
+  "Provisional_Allocation_Dtls_01072025_V3": {
+    "columns": [
+      "ID",
+      "SeatID",
+      "Academicyear",
+      "StudentID",
+      "OptionID",
+      "RSDL",
+      "HostelFacilities",
+      "UtilityAdvance",
+      "HostelDeposit",
+      "MessAdvance",
+      "AdvancePaid",
+      "AdvanceAmt",
+      "Status",
+      "StudentName",
+      "RoomID",
+      "BlockID",
+      "IsDeleted",
+      "OrderID",
+      "Academic_StartDate",
+      "Academic_EndEndDate",
+      "GenerateAllot",
+      "AllotmentOrderPath",
+      "userid",
+      "datem",
+      "ActionDate",
+      "Comment",
+      "SeatName"
+    ],
+    "fk_count": 0
+  },
+  "Provisional_Allocation_Dtls_01072025_V4": {
+    "columns": [
+      "ID",
+      "SeatID",
+      "Academicyear",
+      "StudentID",
+      "OptionID",
+      "RSDL",
+      "HostelFacilities",
+      "UtilityAdvance",
+      "HostelDeposit",
+      "MessAdvance",
+      "AdvancePaid",
+      "AdvanceAmt",
+      "Status",
+      "StudentName",
+      "RoomID",
+      "BlockID",
+      "IsDeleted",
+      "OrderID",
+      "Academic_StartDate",
+      "Academic_EndEndDate",
+      "GenerateAllot",
+      "AllotmentOrderPath",
+      "userid",
+      "datem",
+      "ActionDate",
+      "Comment",
+      "SeatName"
+    ],
+    "fk_count": 0
+  },
+  "Provisional_Allocation_Dtls_backup_11072025": {
+    "columns": [
+      "ID",
+      "SeatID",
+      "Academicyear",
+      "StudentID",
+      "OptionID",
+      "RSDL",
+      "HostelFacilities",
+      "UtilityAdvance",
+      "HostelDeposit",
+      "MessAdvance",
+      "AdvancePaid",
+      "AdvanceAmt",
+      "Status",
+      "StudentName",
+      "RoomID",
+      "BlockID",
+      "IsDeleted",
+      "OrderID",
+      "Academic_StartDate",
+      "Academic_EndEndDate",
+      "GenerateAllot",
+      "AllotmentOrderPath",
+      "userid",
+      "datem",
+      "ActionDate",
+      "Comment",
+      "SeatName"
+    ],
+    "fk_count": 0
+  },
+  "Provisional_Allocation_Dtls_BACKUP01072025": {
+    "columns": [
+      "ID",
+      "SeatID",
+      "Academicyear",
+      "StudentID",
+      "OptionID",
+      "RSDL",
+      "HostelFacilities",
+      "UtilityAdvance",
+      "HostelDeposit",
+      "MessAdvance",
+      "AdvancePaid",
+      "AdvanceAmt",
+      "Status",
+      "StudentName",
+      "RoomID",
+      "BlockID",
+      "IsDeleted",
+      "OrderID",
+      "Academic_StartDate",
+      "Academic_EndEndDate",
+      "GenerateAllot",
+      "AllotmentOrderPath",
+      "userid",
+      "datem",
+      "ActionDate",
+      "Comment",
+      "SeatName"
+    ],
+    "fk_count": 0
+  },
+  "Provisional_Allocation_Dtls_backup03072025": {
+    "columns": [
+      "ID",
+      "SeatID",
+      "Academicyear",
+      "StudentID",
+      "OptionID",
+      "RSDL",
+      "HostelFacilities",
+      "UtilityAdvance",
+      "HostelDeposit",
+      "MessAdvance",
+      "AdvancePaid",
+      "AdvanceAmt",
+      "Status",
+      "StudentName",
+      "RoomID",
+      "BlockID",
+      "IsDeleted",
+      "OrderID",
+      "Academic_StartDate",
+      "Academic_EndEndDate",
+      "GenerateAllot",
+      "AllotmentOrderPath",
+      "userid",
+      "datem",
+      "ActionDate",
+      "Comment",
+      "SeatName"
+    ],
+    "fk_count": 0
+  },
+  "Provisional_Allocation_Dtls_backup09072025": {
+    "columns": [
+      "ID",
+      "SeatID",
+      "Academicyear",
+      "StudentID",
+      "OptionID",
+      "RSDL",
+      "HostelFacilities",
+      "UtilityAdvance",
+      "HostelDeposit",
+      "MessAdvance",
+      "AdvancePaid",
+      "AdvanceAmt",
+      "Status",
+      "StudentName",
+      "RoomID",
+      "BlockID",
+      "IsDeleted",
+      "OrderID",
+      "Academic_StartDate",
+      "Academic_EndEndDate",
+      "GenerateAllot",
+      "AllotmentOrderPath",
+      "userid",
+      "datem",
+      "ActionDate",
+      "Comment",
+      "SeatName"
+    ],
+    "fk_count": 0
+  },
+  "Provisional_Allocation_Dtls_BACKUP27062025": {
+    "columns": [
+      "ID",
+      "SeatID",
+      "Academicyear",
+      "StudentID",
+      "OptionID",
+      "RSDL",
+      "HostelFacilities",
+      "UtilityAdvance",
+      "HostelDeposit",
+      "MessAdvance",
+      "AdvancePaid",
+      "AdvanceAmt",
+      "Status",
+      "StudentName",
+      "RoomID",
+      "BlockID",
+      "IsDeleted",
+      "OrderID",
+      "Academic_StartDate",
+      "Academic_EndEndDate",
+      "GenerateAllot",
+      "AllotmentOrderPath",
+      "userid",
+      "datem",
+      "ActionDate",
+      "Comment",
+      "SeatName"
+    ],
+    "fk_count": 0
+  },
+  "Provisional_Allocation_Dtls_bk_16072025": {
+    "columns": [
+      "ID",
+      "SeatID",
+      "Academicyear",
+      "StudentID",
+      "OptionID",
+      "RSDL",
+      "HostelFacilities",
+      "UtilityAdvance",
+      "HostelDeposit",
+      "MessAdvance",
+      "AdvancePaid",
+      "AdvanceAmt",
+      "Status",
+      "StudentName",
+      "RoomID",
+      "BlockID",
+      "IsDeleted",
+      "OrderID",
+      "Academic_StartDate",
+      "Academic_EndEndDate",
+      "GenerateAllot",
+      "AllotmentOrderPath",
+      "userid",
+      "datem",
+      "ActionDate",
+      "Comment",
+      "SeatName"
+    ],
+    "fk_count": 0
+  },
+  "Provisional_Allocation_Dtls_requerymitafter": {
+    "columns": [
+      "ID",
+      "SeatID",
+      "Academicyear",
+      "StudentID",
+      "OptionID",
+      "RSDL",
+      "HostelFacilities",
+      "UtilityAdvance",
+      "HostelDeposit",
+      "MessAdvance",
+      "AdvancePaid",
+      "AdvanceAmt",
+      "Status",
+      "StudentName",
+      "RoomID",
+      "BlockID",
+      "IsDeleted",
+      "OrderID",
+      "Academic_StartDate",
+      "Academic_EndEndDate",
+      "GenerateAllot",
+      "AllotmentOrderPath",
+      "userid",
+      "datem",
+      "ActionDate",
+      "Comment",
+      "SeatName"
+    ],
+    "fk_count": 0
+  },
+  "Provisional_Allocation_Dtls1": {
+    "columns": [
+      "ID",
+      "SeatID",
+      "Academicyear",
+      "StudentID",
+      "OptionID",
+      "RSDL",
+      "HostelFacilities",
+      "UtilityAdvance",
+      "HostelDeposit",
+      "MessAdvance",
+      "AdvancePaid",
+      "AdvanceAmt",
+      "Status",
+      "StudentName",
+      "RoomID",
+      "BlockID",
+      "IsDeleted",
+      "OrderID",
+      "Academic_StartDate",
+      "Academic_EndEndDate",
+      "GenerateAllot",
+      "AllotmentOrderPath",
+      "userid",
+      "datem",
+      "ActionDate",
+      "Comment",
+      "SeatName"
+    ],
+    "fk_count": 0
+  },
+  "Provisional_Dtls_Tracker": {
+    "columns": [
+      "ID",
+      "SeatID",
+      "StudentID",
+      "Action",
+      "UserID",
+      "Datem"
+    ],
+    "fk_count": 0
+  },
+  "Role_M": {
+    "columns": [
+      "ID",
+      "Name",
+      "Priority"
+    ],
+    "fk_count": 0
+  },
+  "RoleMenuMapping": {
+    "columns": [
+      "MenuID",
+      "RoleID",
+      "SubMenuID"
+    ],
+    "fk_count": 0
+  },
+  "Rollnocheck": {
+    "columns": [
+      "RollNo",
+      "Name",
+      "hmsrollno"
+    ],
+    "fk_count": 0
+  },
+  "Room_M": {
+    "columns": [
+      "ID",
+      "BlockID",
+      "FloorID",
+      "Display_Name",
+      "RoomType",
+      "SeatCount",
+      "IsLocked",
+      "Vac_Count",
+      "Occ_count",
+      "Ext_Stay",
+      "AllotedCount",
+      "PendingCount",
+      "BookedCount",
+      "PaidCount",
+      "CourseBasedAlt",
+      "AllocationBasedAlt",
+      "ShowMessage",
+      "remarks"
+    ],
+    "fk_count": 0
+  },
+  "room_m_backup07072025": {
+    "columns": [
+      "ID",
+      "BlockID",
+      "FloorID",
+      "Display_Name",
+      "RoomType",
+      "SeatCount",
+      "IsLocked",
+      "Vac_Count",
+      "Occ_count",
+      "Ext_Stay",
+      "AllotedCount",
+      "PendingCount",
+      "BookedCount",
+      "PaidCount",
+      "CourseBasedAlt",
+      "AllocationBasedAlt"
+    ],
+    "fk_count": 0
+  },
+  "Room_M_bkroomremovalofmahe": {
+    "columns": [
+      "ID",
+      "BlockID",
+      "FloorID",
+      "Display_Name",
+      "RoomType",
+      "SeatCount",
+      "IsLocked",
+      "Vac_Count",
+      "Occ_count",
+      "Ext_Stay",
+      "AllotedCount",
+      "PendingCount",
+      "BookedCount",
+      "PaidCount",
+      "CourseBasedAlt",
+      "AllocationBasedAlt",
+      "ShowMessage",
+      "remarks"
+    ],
+    "fk_count": 0
+  },
+  "RoomAllocationMap": {
+    "columns": [
+      "RoomID",
+      "AllocationID"
+    ],
+    "fk_count": 0
+  },
+  "RoomCourseMap": {
+    "columns": [
+      "RoomID",
+      "CourseType",
+      "Locked"
+    ],
+    "fk_count": 0
+  },
+  "RoomCourseMap_backup07072025": {
+    "columns": [
+      "RoomID",
+      "CourseType",
+      "Locked"
+    ],
+    "fk_count": 0
+  },
+  "RoomType_Change": {
+    "columns": [
+      "ID",
+      "RoomID",
+      "EffectiveDate",
+      "RoomTypeID",
+      "CreatedBy",
+      "CreatedDate"
+    ],
+    "fk_count": 0
+  },
+  "RoomType_M": {
+    "columns": [
+      "ID",
+      "Name",
+      "IsActive",
+      "IsStandard",
+      "IsDeluxe",
+      "IsAttachedWashroom",
+      "IsCommonWashroom",
+      "ACApplicable",
+      "NonACApplicable",
+      "IsSingleOccupants",
+      "IsDoubleOccupants",
+      "IsTripleOccupants",
+      "IsMoreOccupants",
+      "Excludeforreport"
+    ],
+    "fk_count": 0
+  },
+  "RoomTypeUpdateHistory": {
+    "columns": [
+      "ID",
+      "RoomID",
+      "RoomNumber",
+      "BlockID",
+      "OldRoomTypeID",
+      "NewRoomTypeID",
+      "OldSeatCount",
+      "NewSeatCount",
+      "OldIsLocked",
+      "NewIsLocked",
+      "Remarks",
+      "UpdatedBy",
+      "UpdatedDate",
+      "AcademicYear",
+      "CreatedDate"
+    ],
+    "fk_count": 0
+  },
+  "RoomUnlock_Jobrun_Tracker": {
+    "columns": [
+      "ID",
+      "DateofRun",
+      "BlockedStudentID",
+      "BlockedTime",
+      "SeatID",
+      "AcademicYear",
+      "CreatedDate",
+      "CreatedBy"
+    ],
+    "fk_count": 0
+  },
+  "Sallocation_02092025": {
+    "columns": [
+      "ID",
+      "SeatID",
+      "BlockID",
+      "RoomID",
+      "Action",
+      "ActionDate",
+      "Academicyear",
+      "StudentID",
+      "Status",
+      "UserID",
+      "Datem",
+      "Remarks",
+      "IsDeleted"
+    ],
+    "fk_count": 0
+  },
+  "Seat_Details_M": {
+    "columns": [
+      "SeatID",
+      "RoomID",
+      "Alloted_StudentID",
+      "Status",
+      "Ext_Stay",
+      "Ext_StayStartDate",
+      "No_of_Days",
+      "IsBlocked",
+      "Blocked_StudentID",
+      "BlockedTime",
+      "AcademicYear",
+      "UserID",
+      "datem",
+      "DisplaySeatName",
+      "ActionDate",
+      "Remarks",
+      "StudentName",
+      "OrderID",
+      "BlockId",
+      "GenerateAllot"
+    ],
+    "fk_count": 0
+  },
+  "Seat_Details_M_01072025": {
+    "columns": [
+      "SeatID",
+      "RoomID",
+      "Alloted_StudentID",
+      "Status",
+      "Ext_Stay",
+      "Ext_StayStartDate",
+      "No_of_Days",
+      "IsBlocked",
+      "Blocked_StudentID",
+      "BlockedTime",
+      "AcademicYear",
+      "UserID",
+      "datem",
+      "DisplaySeatName",
+      "ActionDate",
+      "Remarks",
+      "StudentName",
+      "OrderID",
+      "BlockId",
+      "GenerateAllot"
+    ],
+    "fk_count": 0
+  },
+  "Seat_Details_M_01072025_v4": {
+    "columns": [
+      "SeatID",
+      "RoomID",
+      "Alloted_StudentID",
+      "Status",
+      "Ext_Stay",
+      "Ext_StayStartDate",
+      "No_of_Days",
+      "IsBlocked",
+      "Blocked_StudentID",
+      "BlockedTime",
+      "AcademicYear",
+      "UserID",
+      "datem",
+      "DisplaySeatName",
+      "ActionDate",
+      "Remarks",
+      "StudentName",
+      "OrderID",
+      "BlockId",
+      "GenerateAllot"
+    ],
+    "fk_count": 0
+  },
+  "seat_details_M_04072025": {
+    "columns": [
+      "SeatID",
+      "RoomID",
+      "Alloted_StudentID",
+      "Status",
+      "Ext_Stay",
+      "Ext_StayStartDate",
+      "No_of_Days",
+      "IsBlocked",
+      "Blocked_StudentID",
+      "BlockedTime",
+      "AcademicYear",
+      "UserID",
+      "datem",
+      "DisplaySeatName",
+      "ActionDate",
+      "Remarks",
+      "StudentName",
+      "OrderID",
+      "BlockId",
+      "GenerateAllot"
+    ],
+    "fk_count": 0
+  },
+  "Seat_Details_M_backup_11072025": {
+    "columns": [
+      "SeatID",
+      "RoomID",
+      "Alloted_StudentID",
+      "Status",
+      "Ext_Stay",
+      "Ext_StayStartDate",
+      "No_of_Days",
+      "IsBlocked",
+      "Blocked_StudentID",
+      "BlockedTime",
+      "AcademicYear",
+      "UserID",
+      "datem",
+      "DisplaySeatName",
+      "ActionDate",
+      "Remarks",
+      "StudentName",
+      "OrderID",
+      "BlockId",
+      "GenerateAllot"
+    ],
+    "fk_count": 0
+  },
+  "Seat_Details_M_backup03072025": {
+    "columns": [
+      "SeatID",
+      "RoomID",
+      "Alloted_StudentID",
+      "Status",
+      "Ext_Stay",
+      "Ext_StayStartDate",
+      "No_of_Days",
+      "IsBlocked",
+      "Blocked_StudentID",
+      "BlockedTime",
+      "AcademicYear",
+      "UserID",
+      "datem",
+      "DisplaySeatName",
+      "ActionDate",
+      "Remarks",
+      "StudentName",
+      "OrderID",
+      "BlockId",
+      "GenerateAllot"
+    ],
+    "fk_count": 0
+  },
+  "Seat_Details_M_backup09072025": {
+    "columns": [
+      "SeatID",
+      "RoomID",
+      "Alloted_StudentID",
+      "Status",
+      "Ext_Stay",
+      "Ext_StayStartDate",
+      "No_of_Days",
+      "IsBlocked",
+      "Blocked_StudentID",
+      "BlockedTime",
+      "AcademicYear",
+      "UserID",
+      "datem",
+      "DisplaySeatName",
+      "ActionDate",
+      "Remarks",
+      "StudentName",
+      "OrderID",
+      "BlockId",
+      "GenerateAllot"
+    ],
+    "fk_count": 0
+  },
+  "seat_Details_M_bk06082025": {
+    "columns": [
+      "SeatID",
+      "RoomID",
+      "Alloted_StudentID",
+      "Status",
+      "Ext_Stay",
+      "Ext_StayStartDate",
+      "No_of_Days",
+      "IsBlocked",
+      "Blocked_StudentID",
+      "BlockedTime",
+      "AcademicYear",
+      "UserID",
+      "datem",
+      "DisplaySeatName",
+      "ActionDate",
+      "Remarks",
+      "StudentName",
+      "OrderID",
+      "BlockId",
+      "GenerateAllot"
+    ],
+    "fk_count": 0
+  },
+  "seat_details_M_bk29072025": {
+    "columns": [
+      "SeatID",
+      "RoomID",
+      "Alloted_StudentID",
+      "Status",
+      "Ext_Stay",
+      "Ext_StayStartDate",
+      "No_of_Days",
+      "IsBlocked",
+      "Blocked_StudentID",
+      "BlockedTime",
+      "AcademicYear",
+      "UserID",
+      "datem",
+      "DisplaySeatName",
+      "ActionDate",
+      "Remarks",
+      "StudentName",
+      "OrderID",
+      "BlockId",
+      "GenerateAllot"
+    ],
+    "fk_count": 0
+  },
+  "Seat_Details_M_bkseatremovalofmahe": {
+    "columns": [
+      "SeatID",
+      "RoomID",
+      "Alloted_StudentID",
+      "Status",
+      "Ext_Stay",
+      "Ext_StayStartDate",
+      "No_of_Days",
+      "IsBlocked",
+      "Blocked_StudentID",
+      "BlockedTime",
+      "AcademicYear",
+      "UserID",
+      "datem",
+      "DisplaySeatName",
+      "ActionDate",
+      "Remarks",
+      "StudentName",
+      "OrderID",
+      "BlockId",
+      "GenerateAllot"
+    ],
+    "fk_count": 0
+  },
+  "Seat_Details_M_blr_beforeOccupany05082025": {
+    "columns": [
+      "SeatID",
+      "RoomID",
+      "Alloted_StudentID",
+      "Status",
+      "Ext_Stay",
+      "Ext_StayStartDate",
+      "No_of_Days",
+      "IsBlocked",
+      "Blocked_StudentID",
+      "BlockedTime",
+      "AcademicYear",
+      "UserID",
+      "datem",
+      "DisplaySeatName",
+      "ActionDate",
+      "Remarks",
+      "StudentName",
+      "OrderID",
+      "BlockId",
+      "GenerateAllot"
+    ],
+    "fk_count": 0
+  },
+  "seat_details_M_occupyblocked": {
+    "columns": [
+      "SeatID",
+      "RoomID",
+      "Alloted_StudentID",
+      "Status",
+      "Ext_Stay",
+      "Ext_StayStartDate",
+      "No_of_Days",
+      "IsBlocked",
+      "Blocked_StudentID",
+      "BlockedTime",
+      "AcademicYear",
+      "UserID",
+      "datem",
+      "DisplaySeatName",
+      "ActionDate",
+      "Remarks",
+      "StudentName",
+      "OrderID",
+      "BlockId",
+      "GenerateAllot"
+    ],
+    "fk_count": 0
+  },
+  "Seat_Details_M_provisionaldatacopiedoffline": {
+    "columns": [
+      "SeatID",
+      "RoomID",
+      "Alloted_StudentID",
+      "Status",
+      "Ext_Stay",
+      "Ext_StayStartDate",
+      "No_of_Days",
+      "IsBlocked",
+      "Blocked_StudentID",
+      "BlockedTime",
+      "AcademicYear",
+      "UserID",
+      "datem",
+      "DisplaySeatName",
+      "ActionDate",
+      "Remarks",
+      "StudentName",
+      "OrderID",
+      "BlockId",
+      "GenerateAllot"
+    ],
+    "fk_count": 0
+  },
+  "Seat_Details_M_requerymitafter": {
+    "columns": [
+      "SeatID",
+      "RoomID",
+      "Alloted_StudentID",
+      "Status",
+      "Ext_Stay",
+      "Ext_StayStartDate",
+      "No_of_Days",
+      "IsBlocked",
+      "Blocked_StudentID",
+      "BlockedTime",
+      "AcademicYear",
+      "UserID",
+      "datem",
+      "DisplaySeatName",
+      "ActionDate",
+      "Remarks",
+      "StudentName",
+      "OrderID",
+      "BlockId",
+      "GenerateAllot"
+    ],
+    "fk_count": 0
+  },
+  "Seat_Details_M_shiftmovement2508": {
+    "columns": [
+      "SeatID",
+      "RoomID",
+      "Alloted_StudentID",
+      "Status",
+      "Ext_Stay",
+      "Ext_StayStartDate",
+      "No_of_Days",
+      "IsBlocked",
+      "Blocked_StudentID",
+      "BlockedTime",
+      "AcademicYear",
+      "UserID",
+      "datem",
+      "DisplaySeatName",
+      "ActionDate",
+      "Remarks",
+      "StudentName",
+      "OrderID",
+      "BlockId",
+      "GenerateAllot"
+    ],
+    "fk_count": 0
+  },
+  "seat_details_M_Temp": {
+    "columns": [
+      "SeatID",
+      "RoomID",
+      "Alloted_StudentID",
+      "Status",
+      "ActionDate",
+      "BlockId"
+    ],
+    "fk_count": 0
+  },
+  "seat_details_M_TempProc": {
+    "columns": [
+      "SeatID",
+      "RoomID",
+      "Alloted_StudentID",
+      "Status",
+      "ActionDate",
+      "BlockId",
+      "Datem"
+    ],
+    "fk_count": 0
+  },
+  "Seat_Details_Mbackup01072025": {
+    "columns": [
+      "SeatID",
+      "RoomID",
+      "Alloted_StudentID",
+      "Status",
+      "Ext_Stay",
+      "Ext_StayStartDate",
+      "No_of_Days",
+      "IsBlocked",
+      "Blocked_StudentID",
+      "BlockedTime",
+      "AcademicYear",
+      "UserID",
+      "datem",
+      "DisplaySeatName",
+      "ActionDate",
+      "Remarks",
+      "StudentName",
+      "OrderID",
+      "BlockId",
+      "GenerateAllot"
+    ],
+    "fk_count": 0
+  },
+  "seat_mahe": {
+    "columns": [
+      "SeatID",
+      "allotedstudentid",
+      "blockedstudentid"
+    ],
+    "fk_count": 0
+  },
+  "Seat_Txn_MigrationList": {
+    "columns": [
+      "StudentID",
+      "Year2024",
+      "Action2024",
+      "Status2024",
+      "ActionDate2024",
+      "Year2025",
+      "Action2025",
+      "Status2025",
+      "ActionDate2025"
+    ],
+    "fk_count": 0
+  },
+  "Seat_Txn_MigrationList_2025ACYRISSUE": {
+    "columns": [
+      "StudentID",
+      "Year2024",
+      "Action2024",
+      "Status2024",
+      "ActionDate2024",
+      "Year2025",
+      "Action2025",
+      "Status2025",
+      "ActionDate2025"
+    ],
+    "fk_count": 0
+  },
+  "Seat_Txn_tracker": {
+    "columns": [
+      "ID",
+      "SeatID",
+      "BlockID",
+      "RoomID",
+      "Action",
+      "ActionDate",
+      "Academicyear",
+      "StudentID",
+      "Status",
+      "UserID",
+      "Datem",
+      "Remarks",
+      "IsDeleted"
+    ],
+    "fk_count": 0
+  },
+  "Seat_Txn_tracker_ALLOTMENTAction": {
+    "columns": [
+      "ID",
+      "SeatID",
+      "BlockID",
+      "RoomID",
+      "Action",
+      "ActionDate",
+      "Academicyear",
+      "StudentID",
+      "Status",
+      "UserID",
+      "Datem",
+      "Remarks"
+    ],
+    "fk_count": 0
+  },
+  "Seat_Txn_tracker_beforeOccupancy": {
+    "columns": [
+      "ID",
+      "SeatID",
+      "BlockID",
+      "RoomID",
+      "Action",
+      "ActionDate",
+      "Academicyear",
+      "StudentID",
+      "Status",
+      "UserID",
+      "Datem",
+      "Remarks"
+    ],
+    "fk_count": 0
+  },
+  "Seat_Txn_tracker_bk_01092025": {
+    "columns": [
+      "ID",
+      "SeatID",
+      "BlockID",
+      "RoomID",
+      "Action",
+      "ActionDate",
+      "Academicyear",
+      "StudentID",
+      "Status",
+      "UserID",
+      "Datem",
+      "Remarks",
+      "IsDeleted"
+    ],
+    "fk_count": 0
+  },
+  "Seat_Txn_Tracker_intershiftupdate": {
+    "columns": [
+      "ID",
+      "SeatID",
+      "BlockID",
+      "RoomID",
+      "Action",
+      "ActionDate",
+      "Academicyear",
+      "StudentID",
+      "Status",
+      "UserID",
+      "Datem",
+      "Remarks",
+      "IsDeleted"
+    ],
+    "fk_count": 0
+  },
+  "Seat_Txn_Tracker_IsDeletedYEntries27092025": {
+    "columns": [
+      "ID",
+      "SeatID",
+      "StudentID",
+      "Action",
+      "Status",
+      "ActionDate",
+      "IsDeleted"
+    ],
+    "fk_count": 0
+  },
+  "Seat_Txn_Tracker_IsDeletedYEntries27092025_MAHE": {
+    "columns": [
+      "ID",
+      "SeatID",
+      "StudentID",
+      "Action",
+      "Status",
+      "ActionDate",
+      "IsDeleted"
+    ],
+    "fk_count": 0
+  },
+  "Seat_Txn_tracker_OapprovetoShiftoccupy": {
+    "columns": [
+      "ID",
+      "SeatID",
+      "BlockID",
+      "RoomID",
+      "Action",
+      "ActionDate",
+      "Academicyear",
+      "StudentID",
+      "Status",
+      "UserID",
+      "Datem",
+      "Remarks",
+      "IsDeleted"
+    ],
+    "fk_count": 0
+  },
+  "Seat_Txn_tracker_shift": {
+    "columns": [
+      "ID",
+      "SeatID",
+      "BlockID",
+      "RoomID",
+      "Action",
+      "ActionDate",
+      "Academicyear",
+      "StudentID",
+      "Status",
+      "UserID",
+      "Datem",
+      "Remarks"
+    ],
+    "fk_count": 0
+  },
+  "Seat_Txn_tracker_shiftconfirmedtoshiftaoccupy": {
+    "columns": [
+      "ID",
+      "SeatID",
+      "BlockID",
+      "RoomID",
+      "Action",
+      "ActionDate",
+      "Academicyear",
+      "StudentID",
+      "Status",
+      "UserID",
+      "Datem",
+      "Remarks",
+      "IsDeleted"
+    ],
+    "fk_count": 0
+  },
+  "Seat_Txn_tracker_shiftmovement2508": {
+    "columns": [
+      "ID",
+      "SeatID",
+      "BlockID",
+      "RoomID",
+      "Action",
+      "ActionDate",
+      "Academicyear",
+      "StudentID",
+      "Status",
+      "UserID",
+      "Datem",
+      "Remarks",
+      "IsDeleted"
+    ],
+    "fk_count": 0
+  },
+  "Seat_Txn_trackerbk_02082025": {
+    "columns": [
+      "ID",
+      "SeatID",
+      "BlockID",
+      "RoomID",
+      "Action",
+      "ActionDate",
+      "Academicyear",
+      "StudentID",
+      "Status",
+      "UserID",
+      "Datem",
+      "Remarks"
+    ],
+    "fk_count": 0
+  },
+  "shashi": {
+    "columns": [
+      "srollno",
+      "sAplNo",
+      "RollNo",
+      "AplNo",
+      "ClassCode",
+      "INSTID",
+      "CatgCode"
+    ],
+    "fk_count": 0
+  },
+  "shashi2": {
+    "columns": [
+      "srollno",
+      "sAplNo",
+      "RollNo",
+      "AplNo",
+      "ClassCode",
+      "INSTID",
+      "CatgCode"
+    ],
+    "fk_count": 0
+  },
+  "shashimit": {
+    "columns": [
+      "srollno",
+      "sAplNo",
+      "RollNo",
+      "AplNo",
+      "ClassCode",
+      "INSTID",
+      "CatgCode"
+    ],
+    "fk_count": 0
+  },
+  "shashimit2": {
+    "columns": [
+      "srollno",
+      "sAplNo",
+      "RollNo",
+      "AplNo",
+      "ClassCode",
+      "INSTID",
+      "CatgCode"
+    ],
+    "fk_count": 0
+  },
+  "Shift_Confirm_Traker": {
+    "columns": [
+      "RefID",
+      "StudentID",
+      "Shiftdate",
+      "Confirmdate",
+      "userid",
+      "Remarks"
+    ],
+    "fk_count": 0
+  },
+  "Shift_Req_Dtls": {
+    "columns": [
+      "ID",
+      "CurrentSeatID",
+      "CurrentRoomType",
+      "ReqStudentID",
+      "ReqBlock",
+      "RoomType",
+      "Status",
+      "ShiftDate",
+      "HasAdExp",
+      "RSDL",
+      "FinSync",
+      "FinAmount",
+      "FinSyncType",
+      "NewStudentID",
+      "NewStudentSeat",
+      "PaymentID",
+      "IsPaid",
+      "NewBlockID",
+      "userid",
+      "datetime",
+      "Ismutual",
+      "IsmutualID",
+      "Shifted",
+      "ShiftedOn",
+      "Academicyear",
+      "generateshiftamount",
+      "StudentType",
+      "StudentCategory",
+      "AdditionalComment",
+      "AccReqRemarks",
+      "changeallotment"
+    ],
+    "fk_count": 0
+  },
+  "Shift_Req_Dtls_250825": {
+    "columns": [
+      "ID",
+      "CurrentSeatID",
+      "CurrentRoomType",
+      "ReqStudentID",
+      "ReqBlock",
+      "RoomType",
+      "Status",
+      "ShiftDate",
+      "HasAdExp",
+      "RSDL",
+      "FinSync",
+      "FinAmount",
+      "FinSyncType",
+      "NewStudentID",
+      "NewStudentSeat",
+      "PaymentID",
+      "IsPaid",
+      "NewBlockID",
+      "userid",
+      "datetime",
+      "Ismutual",
+      "IsmutualID",
+      "Shifted",
+      "ShiftedOn",
+      "Academicyear",
+      "generateshiftamount",
+      "StudentType",
+      "StudentCategory",
+      "AdditionalComment",
+      "AccReqRemarks"
+    ],
+    "fk_count": 0
+  },
+  "Shift_Req_Dtls_shiftmovement2508": {
+    "columns": [
+      "ID",
+      "CurrentSeatID",
+      "CurrentRoomType",
+      "ReqStudentID",
+      "ReqBlock",
+      "RoomType",
+      "Status",
+      "ShiftDate",
+      "HasAdExp",
+      "RSDL",
+      "FinSync",
+      "FinAmount",
+      "FinSyncType",
+      "NewStudentID",
+      "NewStudentSeat",
+      "PaymentID",
+      "IsPaid",
+      "NewBlockID",
+      "userid",
+      "datetime",
+      "Ismutual",
+      "IsmutualID",
+      "Shifted",
+      "ShiftedOn",
+      "Academicyear",
+      "generateshiftamount",
+      "StudentType",
+      "StudentCategory",
+      "AdditionalComment",
+      "AccReqRemarks",
+      "changeallotment"
+    ],
+    "fk_count": 0
+  },
+  "ShiftAmountUpdateHistory": {
+    "columns": [
+      "ID",
+      "StudentID",
+      "RollNumber",
+      "OldHostelFacilities",
+      "NewHostelFacilities",
+      "OldUtilityAdvance",
+      "NewUtilityAdvance",
+      "OldHostelDeposit",
+      "NewHostelDeposit",
+      "OldMessAdvance",
+      "NewMessAdvance",
+      "OldLaundry",
+      "NewLaundry",
+      "OldTotalAmt",
+      "NewTotalAmt",
+      "Remarks",
+      "UpdatedBy",
+      "UpdatedDate",
+      "AcademicYear",
+      "CreatedDate"
+    ],
+    "fk_count": 0
+  },
+  "Status_M": {
+    "columns": [
+      "ID",
+      "Description"
+    ],
+    "fk_count": 0
+  },
+  "Student_Academic_Tracker": {
+    "columns": [
+      "ID",
+      "Rollno",
+      "Academicstartdate",
+      "Academicenddate",
+      "UserID",
+      "Datem",
+      "Academicyear",
+      "remarks",
+      "Extendeddate"
+    ],
+    "fk_count": 0
+  },
+  "Student_Details": {
+    "columns": [
+      "DateOfEnrolment",
+      "InstitutionID",
+      "StudentUniqueEnrolmentID",
+      "Name",
+      "Gender",
+      "Emailid",
+      "Categorywise",
+      "YearOfEnrolmentToCourse",
+      "ProgrammeCode",
+      "ProgrammeName",
+      "ProgramDuration",
+      "YearOfStudy",
+      "Semester",
+      "StudentStatus",
+      "DateOfCompletion",
+      "DateOfWithdrawal",
+      "ContactNumber_student",
+      "FatherName",
+      "MotherName",
+      "ContactNoOfParent",
+      "CourseName",
+      "TypeOfProgram",
+      "Foregin_NRI_Indian",
+      "EntranceExam_ApplicationNo",
+      "Applicationnumber",
+      "Rank",
+      "Virtual_AccNo",
+      "DOB",
+      "OTP",
+      "OTPGenTime",
+      "OTPCount",
+      "OTPLocked",
+      "OTPLockedTime",
+      "CGPA",
+      "BeneficiaryName",
+      "BankName",
+      "IFSCCode",
+      "BankAccountNo",
+      "BankBranch",
+      "CreatedBy",
+      "CreatedDate",
+      "UpdatedBy",
+      "UpdatedDate",
+      "ParentEmailid"
+    ],
+    "fk_count": 0
+  },
+  "Student_Details_app": {
+    "columns": [
+      "DateOfEnrolment",
+      "InstitutionID",
+      "StudentUniqueEnrolmentID",
+      "Name",
+      "Gender",
+      "Emailid",
+      "Categorywise",
+      "YearOfEnrolmentToCourse",
+      "ProgrammeCode",
+      "ProgrammeName",
+      "ProgramDuration",
+      "YearOfStudy",
+      "Semester",
+      "StudentStatus",
+      "DateOfCompletion",
+      "DateOfWithdrawal",
+      "ContactNumber_student",
+      "FatherName",
+      "MotherName",
+      "ContactNoOfParent",
+      "CourseName",
+      "TypeOfProgram",
+      "Foregin_NRI_Indian",
+      "EntranceExam_ApplicationNo",
+      "Applicationnumber",
+      "Rank",
+      "Virtual_AccNo",
+      "DOB"
+    ],
+    "fk_count": 0
+  },
+  "Student_details_bk_23082015": {
+    "columns": [
+      "DateOfEnrolment",
+      "InstitutionID",
+      "StudentUniqueEnrolmentID",
+      "Name",
+      "Gender",
+      "Emailid",
+      "Categorywise",
+      "YearOfEnrolmentToCourse",
+      "ProgrammeCode",
+      "ProgrammeName",
+      "ProgramDuration",
+      "YearOfStudy",
+      "Semester",
+      "StudentStatus",
+      "DateOfCompletion",
+      "DateOfWithdrawal",
+      "ContactNumber_student",
+      "FatherName",
+      "MotherName",
+      "ContactNoOfParent",
+      "CourseName",
+      "TypeOfProgram",
+      "Foregin_NRI_Indian",
+      "EntranceExam_ApplicationNo",
+      "Applicationnumber",
+      "Rank",
+      "Virtual_AccNo",
+      "DOB",
+      "OTP",
+      "OTPGenTime",
+      "OTPCount",
+      "OTPLocked",
+      "OTPLockedTime"
+    ],
+    "fk_count": 0
+  },
+  "Student_Details_TMP": {
+    "columns": [
+      "DateOfEnrolment",
+      "InstitutionID",
+      "StudentUniqueEnrolmentID",
+      "Name",
+      "Gender",
+      "Emailid",
+      "Categorywise",
+      "YearOfEnrolmentToCourse",
+      "ProgrammeCode",
+      "ProgrammeName",
+      "ProgramDuration",
+      "YearOfStudy",
+      "Semester",
+      "StudentStatus",
+      "DateOfCompletion",
+      "DateOfWithdrawal",
+      "ContactNumber_student",
+      "FatherName",
+      "MotherName",
+      "ContactNoOfParent",
+      "CourseName",
+      "TypeOfProgram",
+      "Foregin_NRI_Indian",
+      "EntranceExam_ApplicationNo",
+      "Applicationnumber",
+      "Rank",
+      "Virtual_AccNo",
+      "DOB"
+    ],
+    "fk_count": 0
+  },
+  "Student_details_Yogish": {
+    "columns": [
+      "DateOfEnrolment",
+      "InstitutionID",
+      "StudentUniqueEnrolmentID",
+      "Name",
+      "Gender",
+      "Emailid",
+      "Categorywise",
+      "YearOfEnrolmentToCourse",
+      "ProgrammeCode",
+      "ProgrammeName",
+      "ProgramDuration",
+      "YearOfStudy",
+      "Semester",
+      "StudentStatus",
+      "DateOfCompletion",
+      "DateOfWithdrawal",
+      "ContactNumber_student",
+      "FatherName",
+      "MotherName",
+      "ContactNoOfParent",
+      "CourseName",
+      "TypeOfProgram",
+      "Foregin_NRI_Indian",
+      "EntranceExam_ApplicationNo",
+      "Applicationnumber",
+      "Rank",
+      "Virtual_AccNo",
+      "DOB"
+    ],
+    "fk_count": 0
+  },
+  "Student_Details_yogish1": {
+    "columns": [
+      "DateOfEnrolment",
+      "InstitutionID",
+      "StudentUniqueEnrolmentID",
+      "Name",
+      "Gender",
+      "Emailid",
+      "Categorywise",
+      "YearOfEnrolmentToCourse",
+      "ProgrammeCode",
+      "ProgrammeName",
+      "ProgramDuration",
+      "YearOfStudy",
+      "Semester",
+      "StudentStatus",
+      "DateOfCompletion",
+      "DateOfWithdrawal",
+      "ContactNumber_student",
+      "FatherName",
+      "MotherName",
+      "ContactNoOfParent",
+      "CourseName",
+      "TypeOfProgram",
+      "Foregin_NRI_Indian",
+      "EntranceExam_ApplicationNo",
+      "Applicationnumber",
+      "Rank",
+      "Virtual_AccNo",
+      "DOB"
+    ],
+    "fk_count": 0
+  },
+  "Student_Pay_Info": {
+    "columns": [
+      "ID",
+      "Academicyear",
+      "StudentID",
+      "SeatID",
+      "Action",
+      "HostelFacilities",
+      "UtilityAdvance",
+      "HostelDeposit",
+      "MessAdvance",
+      "Laundry",
+      "UserID",
+      "Datem",
+      "FinSyncType",
+      "IsPaid",
+      "totalamt",
+      "IsConsideredforFinSync",
+      "ReferenceID",
+      "ShiftType",
+      "OrderID"
+    ],
+    "fk_count": 0
+  },
+  "Student_Pay_Info_backup": {
+    "columns": [
+      "ID",
+      "Academicyear",
+      "StudentID",
+      "SeatID",
+      "Action",
+      "HostelFacilities",
+      "UtilityAdvance",
+      "HostelDeposit",
+      "MessAdvance",
+      "Laundry",
+      "UserID",
+      "Datem",
+      "FinSyncType",
+      "IsPaid",
+      "totalamt",
+      "IsConsideredforFinSync"
+    ],
+    "fk_count": 0
+  },
+  "student_pay_info_bkmututal2608": {
+    "columns": [
+      "ID",
+      "Academicyear",
+      "StudentID",
+      "SeatID",
+      "Action",
+      "HostelFacilities",
+      "UtilityAdvance",
+      "HostelDeposit",
+      "MessAdvance",
+      "Laundry",
+      "UserID",
+      "Datem",
+      "FinSyncType",
+      "IsPaid",
+      "totalamt",
+      "IsConsideredforFinSync",
+      "ReferenceID",
+      "ShiftType"
+    ],
+    "fk_count": 0
+  },
+  "Student_VacateChecklistDetails": {
+    "columns": [
+      "StudentID",
+      "EntryNo",
+      "VacateID",
+      "ChecklistID",
+      "IsSelected",
+      "Remarks",
+      "CreatedBy",
+      "CreatedDate"
+    ],
+    "fk_count": 0
+  },
+  "Student_VacateMess_StatusDetails": {
+    "columns": [
+      "ID",
+      "StudentID",
+      "VacateID",
+      "MessUserID",
+      "ReviewStatus",
+      "ReviewedOn",
+      "CreatedDate"
+    ],
+    "fk_count": 0
+  },
+  "student_vacateStatus_Tracker": {
+    "columns": [
+      "ID",
+      "StudentID",
+      "PrevStatus",
+      "NewStatus",
+      "Comment",
+      "CreatedDate",
+      "CreatedBy",
+      "VacateID",
+      "MessAmount",
+      "MessYear"
+    ],
+    "fk_count": 0
+  },
+  "Student_WithdrawalDetails": {
+    "columns": [
+      "ID",
+      "StudentID",
+      "AcademicYear",
+      "SeatID",
+      "Type",
+      "Status",
+      "Reason",
+      "ReasonDetails",
+      "AccomodType",
+      "ContactNo",
+      "ContactPerson",
+      "ContactAddress",
+      "AccountNumber",
+      "IFSCCode",
+      "BankName",
+      "Branch",
+      "AccountHolderName",
+      "BankUploadPath",
+      "MedicalCertificate",
+      "AdditionalDocument",
+      "CreatedDate",
+      "CreatedBy",
+      "WardenApprovalDate",
+      "WardenApprovedBy",
+      "FinanceApprovalDate",
+      "FinanceApprovedBy",
+      "Reworkcomment",
+      "UploadRemarks",
+      "AdminApprovalDate",
+      "AdminApprovedBy",
+      "shiftdate",
+      "Plannedvacatedate",
+      "IsSynch",
+      "FinanceAction",
+      "InternshipUpload",
+      "NoDue_Path",
+      "IsMessApproved",
+      "IsLaundaryApproved"
+    ],
+    "fk_count": 0
+  },
+  "student_WithdrawStatus_Tracker": {
+    "columns": [
+      "ID",
+      "StudentID",
+      "PrevStatus",
+      "NewStatus",
+      "Comment",
+      "CreatedDate",
+      "CreatedBy"
+    ],
+    "fk_count": 0
+  },
+  "studentbak": {
+    "columns": [
+      "DateOfEnrolment",
+      "InstitutionID",
+      "StudentUniqueEnrolmentID",
+      "Name",
+      "Gender",
+      "Emailid",
+      "Categorywise",
+      "YearOfEnrolmentToCourse",
+      "ProgrammeCode",
+      "ProgrammeName",
+      "ProgramDuration",
+      "YearOfStudy",
+      "Semester",
+      "StudentStatus",
+      "DateOfCompletion",
+      "DateOfWithdrawal",
+      "ContactNumber_student",
+      "FatherName",
+      "MotherName",
+      "ContactNoOfParent",
+      "CourseName",
+      "TypeOfProgram",
+      "Foregin_NRI_Indian",
+      "EntranceExam_ApplicationNo",
+      "Applicationnumber",
+      "Rank",
+      "Virtual_AccNo",
+      "DOB"
+    ],
+    "fk_count": 0
+  },
+  "StudentCategory_M": {
+    "columns": [
+      "ID",
+      "Name",
+      "CategoryType"
+    ],
+    "fk_count": 0
+  },
+  "StudentCGPA": {
+    "columns": [
+      "StudentID",
+      "HMSYear",
+      "RefStud_YrSem",
+      "CGPA_GPA"
+    ],
+    "fk_count": 0
+  },
+  "StudentOptAppl": {
+    "columns": [
+      "Loctn_ID",
+      "StudentID",
+      "HMSYear",
+      "AplStatus",
+      "AplDate",
+      "TotalPrefCount",
+      "AllotedPrefId",
+      "IsConsidered",
+      "IsProcessed",
+      "IsAlloted"
+    ],
+    "fk_count": 0
+  },
+  "StudentOptAppl_Proc": {
+    "columns": [
+      "Loctn_ID",
+      "StudentID",
+      "HMSYear",
+      "AplStatus",
+      "AplDate",
+      "TotalPrefCount",
+      "AllotedPrefId",
+      "IsConsidered",
+      "IsProcessed",
+      "IsAlloted",
+      "Datem"
+    ],
+    "fk_count": 0
+  },
+  "StudentOptDtls": {
+    "columns": [
+      "StudentID",
+      "HMSYear",
+      "Prefid",
+      "BlockID",
+      "RoomType"
+    ],
+    "fk_count": 0
+  },
+  "StudentParentDtls": {
+    "columns": [
+      "Studentid",
+      "FatherEmail_ID",
+      "MotherEmail_ID",
+      "GuardianEmail_ID"
+    ],
+    "fk_count": 0
+  },
+  "SubMenu": {
+    "columns": [
+      "SubMenuId",
+      "MenuId",
+      "SubMenuTitle",
+      "SortOrder",
+      "SubMenuURL"
+    ],
+    "fk_count": 0
+  },
+  "temp_Inmate_Ledger1": {
+    "columns": [
+      "AcademicYear",
+      "StudentID",
+      "Status",
+      "OccupancyDate",
+      "VacancyDate",
+      "CreatedBy",
+      "CreatedDate",
+      "Alloteddate",
+      "SeatID",
+      "AplNo",
+      "StudentName",
+      "RoomID",
+      "BlockID",
+      "Academic_StartDate",
+      "Academic_EndEndDate",
+      "ExtendedDate",
+      "AllotmentOrderPath"
+    ],
+    "fk_count": 0
+  },
+  "Temp_Seat_Details_M": {
+    "columns": [
+      "SeatID",
+      "RoomID",
+      "Alloted_StudentID",
+      "Status",
+      "Ext_Stay",
+      "Ext_StayStartDate",
+      "No_of_Days",
+      "IsBlocked",
+      "Blocked_StudentID",
+      "BlockedTime",
+      "AcademicYear",
+      "UserID",
+      "datem",
+      "DisplaySeatName",
+      "ActionDate",
+      "Remarks",
+      "StudentName",
+      "OrderID",
+      "BlockId",
+      "GenerateAllot"
+    ],
+    "fk_count": 0
+  },
+  "temp1": {
+    "columns": [
+      "rollno"
+    ],
+    "fk_count": 0
+  },
+  "temp2": {
+    "columns": [
+      "rollno"
+    ],
+    "fk_count": 0
+  },
+  "temp3": {
+    "columns": [
+      "rollno",
+      "toblock",
+      "toroom",
+      "dateofoccupancy",
+      "currentseadtdate",
+      "currentseattxndate",
+      "seatid"
+    ],
+    "fk_count": 0
+  },
+  "temp5": {
+    "columns": [
+      "rollno"
+    ],
+    "fk_count": 0
+  },
+  "TempHRA08072025": {
+    "columns": [
+      "Rollno",
+      "Name",
+      "Block",
+      "Room",
+      "Seat",
+      "HMSBlock",
+      "HMSRoom",
+      "HMSSeat",
+      "HMSSeatID"
+    ],
+    "fk_count": 0
+  },
+  "TempHRA09072025": {
+    "columns": [
+      "Rollno",
+      "Name",
+      "Block",
+      "Room",
+      "Seat",
+      "HMSBlock",
+      "HMSRoom",
+      "HMSSeat",
+      "HMSSeatID"
+    ],
+    "fk_count": 0
+  },
+  "temphramasterregister": {
+    "columns": [
+      "TypeInst",
+      "Block",
+      "Roomno",
+      "seatid",
+      "rollno",
+      "Name",
+      "hostelblock",
+      "hostelroom",
+      "hostelseatid"
+    ],
+    "fk_count": 0
+  },
+  "TempNRI09072025": {
+    "columns": [
+      "RollNo",
+      "Name",
+      "Block",
+      "Room",
+      "SeatID",
+      "HMSBlock",
+      "HMSRoom",
+      "HMSSeat",
+      "HMSSeatID"
+    ],
+    "fk_count": 0
+  },
+  "TempNRIAllotment": {
+    "columns": [
+      "Rollno",
+      "Name",
+      "Block",
+      "Room",
+      "SeatID",
+      "HMSBlock",
+      "HMSRoom",
+      "HMSSeatID",
+      "HMSNewSeatID"
+    ],
+    "fk_count": 0
+  },
+  "TempOnlineAllotmentDtls": {
+    "columns": [
+      "StudentID",
+      "PaidINR",
+      "ReceiptNo"
+    ],
+    "fk_count": 0
+  },
+  "TempReport": {
+    "columns": [
+      "SlNo",
+      "Rollno",
+      "Name",
+      "Block",
+      "Room",
+      "Type",
+      "Category",
+      "Total",
+      "Receiptno"
+    ],
+    "fk_count": 0
+  },
+  "TempReport1": {
+    "columns": [
+      "SlNo",
+      "Rollno",
+      "Name",
+      "Block",
+      "Room",
+      "Type",
+      "Category",
+      "Total",
+      "Receiptno"
+    ],
+    "fk_count": 0
+  },
+  "tempstudent_details": {
+    "columns": [
+      "DateOfEnrolment",
+      "InstitutionID",
+      "StudentUniqueEnrolmentID",
+      "Name",
+      "Gender",
+      "Emailid",
+      "Categorywise",
+      "YearOfEnrolmentToCourse",
+      "ProgrammeCode",
+      "ProgrammeName",
+      "ProgramDuration",
+      "YearOfStudy",
+      "Semester",
+      "StudentStatus",
+      "DateOfCompletion",
+      "DateOfWithdrawal",
+      "ContactNumber_student",
+      "FatherName",
+      "MotherName",
+      "ContactNoOfParent",
+      "CourseName",
+      "TypeOfProgram",
+      "Foregin_NRI_Indian",
+      "EntranceExam_ApplicationNo",
+      "Applicationnumber",
+      "Rank",
+      "Virtual_AccNo",
+      "DOB"
+    ],
+    "fk_count": 0
+  },
+  "TMP_ONLINE": {
+    "columns": [
+      "rollno",
+      "txnid",
+      "mode",
+      "refno",
+      "comment",
+      "ORDERID"
+    ],
+    "fk_count": 0
+  },
+  "tmpHMSLedger4": {
+    "columns": [
+      "RollNo",
+      "Name",
+      "Blockcode",
+      "Blockname",
+      "Room",
+      "RoomId",
+      "RoomTypeDesc",
+      "RoomType",
+      "CourseName",
+      "InitilDOJ",
+      "VaccateDate",
+      "ShiftDate",
+      "HostelFacilities",
+      "HostelFacilitiesD",
+      "Flag",
+      "Feecatg",
+      "StartDate",
+      "EndDate",
+      "ExtendedDate",
+      "Categorywise",
+      "TariffINR",
+      "TariffDollar",
+      "RSDL",
+      "DemandDate",
+      "FirstBlock",
+      "FirstRoom",
+      "Location",
+      "ActionDate",
+      "EntryDate"
+    ],
+    "fk_count": 0
+  },
+  "TMPRoomSeatCheck": {
+    "columns": [
+      "Block1",
+      "roomno1",
+      "seatno1",
+      "roomtype1",
+      "roomid",
+      "seatid",
+      "seatnohms"
+    ],
+    "fk_count": 0
+  },
+  "TMPRoomT": {
+    "columns": [
+      "ID",
+      "Display_Name",
+      "BlockID",
+      "SeatCount",
+      "blockname",
+      "TotalSeats",
+      "Name",
+      "FloorID"
+    ],
+    "fk_count": 0
+  },
+  "User_Block_Map": {
+    "columns": [
+      "UserID",
+      "BlockID"
+    ],
+    "fk_count": 0
+  },
+  "VacateChecklist_Loc_Map": {
+    "columns": [
+      "VacateChecklistID",
+      "LocID"
+    ],
+    "fk_count": 0
+  },
+  "VacateChecklist_M": {
+    "columns": [
+      "ID",
+      "Description"
+    ],
+    "fk_count": 0
+  },
+  "VacateType_M": {
+    "columns": [
+      "ID",
+      "Description",
+      "IsActive",
+      "HasRefund",
+      "UploadAvl"
+    ],
+    "fk_count": 0
+  },
+  "YearSemOrder": {
+    "columns": [
+      "Catg",
+      "Gender",
+      "YearSem",
+      "ProcOrder",
+      "PerctoProc"
+    ],
+    "fk_count": 0
+  }
+}
