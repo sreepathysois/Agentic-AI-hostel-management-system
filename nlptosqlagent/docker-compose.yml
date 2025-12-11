@@ -1,0 +1,20 @@
+version: "3.8"
+services:
+  backend:
+    build: ./backend
+    container_name: agentic_backend
+    env_file:
+      - ./backend/.env.example   # replace with actual .env in production or mount env
+    volumes:
+      - ./schema_pretext.txt:/app/../schema_pretext.txt:ro
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+  frontend:
+    build: ./frontend
+    container_name: agentic_frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+
